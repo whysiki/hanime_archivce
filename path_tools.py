@@ -8,22 +8,6 @@ import os
 def ensure_file_exists(
     file_path: str, file_encoding: str = "UTF-8"
 ) -> tuple[bool, str]:
-    """
-    Ensures that a file exists at the specified filepath. If the file doesn't exist, it creates it.
-
-    Args:
-        filepath (str): The path to the file.
-        file_encoding (str, optional): The encoding of the file. Defaults to "UTF-8".
-
-    Returns:
-        tuple[bool, str]: A tuple containing a boolean indicating whether the file exists or was created successfully,
-                          and the absolute path of the file.
-
-    Raises:
-        PermissionError: If there is a permission error while creating the file.
-        Exception: If an unknown error occurs.
-
-    """
     try:
         if not file_path:
             logger.error("Filepath is empty or None.")
