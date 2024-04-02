@@ -1,0 +1,9 @@
+/.venv
+*.mp4
+*.mov
+*.avi
+*.ts
+*.db
+*.sqlite
+/cache/parse
+/cache/source

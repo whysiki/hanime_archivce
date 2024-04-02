@@ -1,0 +1,437 @@
+2024-04-03 02:52:19.571 | SUCCESS  | __main__:read_cache_links:63 - 读取缓存成功
+2024-04-03 02:52:19.578 | SUCCESS  | __main__:read_cache_links:64 - 分类: 裏番, 缓存链接数量: 2596
+2024-04-03 02:52:19.589 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-03 02:52:19.592 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-03 02:52:20.750 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=22711
+2024-04-03 02:52:20.761 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-03 02:52:20.761 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=37898
+2024-04-03 02:52:20.776 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-03 02:52:22.589 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-03 02:52:22.591 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-03 02:52:22.619 | SUCCESS  | cellfunctions:parse:88 - Parsed JSON data: {'name': 'アッチェレランド～堕天使たちの囁き～CONTENTS.3[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/22711-sc-720p.mp4?secure=Qg08ZWx4UYjOG5fWq_fvvQ==,1712124056', 'description': '漸慢曲～墮天使們的呢喃～3アッチェレランド～堕天使たちの囁き～CONTENTS.3'}
+2024-04-03 02:52:22.630 | SUCCESS  | cellfunctions:parse:88 - Parsed JSON data: {'name': '脅迫II～もうひとつの明日～THEANIMETION3rdSTAGE「チェーンブライド、明日香」[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/37898-sc-720p.mp4?secure=9ZaMoD5elYDfzWv7A64MqQ==,1712124056', 'description': '脅迫2第3話アイル原作、ピンクパイナップル製作で贈る人気OVA『脅迫』のセカンドシーズン第3巻。弓子と三宅の罠に落ち、肉人形と化した明日香は良介ら大勢の人の前で犯●れ…。'}
+2024-04-03 02:52:22.631 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-03 02:52:22.631 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-03 02:52:55.440 | SUCCESS  | __main__:read_cache_links:63 - 读取缓存成功
+2024-04-03 02:52:55.440 | SUCCESS  | __main__:read_cache_links:64 - 分类: 裏番, 缓存链接数量: 2596
+2024-04-03 02:52:55.440 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-03 02:52:55.456 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-03 02:52:56.623 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=22844
+2024-04-03 02:52:56.640 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-03 02:52:57.513 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=89088
+2024-04-03 02:52:57.522 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-03 02:52:59.254 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-03 02:52:59.259 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-03 02:52:59.282 | SUCCESS  | cellfunctions:parse:88 - Parsed JSON data: {'name': 'OVA朝まで授業Chu！[中文字幕]', 'contentUrl': 'https://abre-videos.cdn1122.com/_hls/videos/b/a/9/9/a/ba99a6833275df010d40945a549e12db1632563163-1916-1080-4061-h264.mp4/master.m3u8?validfrom=1711990099&validto=1712162899&rate=779712&hdl=-1&hash=zcUH8g4OHA0yGCSdSSshzbNm1oU%3D', 'description': '授業到天明Chu！OVA朝まで授業Chu！'}
+2024-04-03 02:52:59.291 | SUCCESS  | cellfunctions:parse:88 - Parsed JSON data: {'name': 'OVA初恋時間。＃6[中文字幕]', 'contentUrl': 'https://vdownload-49.sb-cd.com/1/5/15632428-1080p.mp4?secure=P5q4nfzCjkdBGJxKdVWR5w,1712115787&m=49&d=1&_tid=15632428', 'description': '初戀時間。6桐華是個金髮碧眼的辣妹，她對男主一往情深卻從未得到他的回應。男主只是把她當作可愛的妹妹，對她的感情視而不見。有一天，桐華終於忍不住向男主表白，卻被他拒絕了。她悲痛欲絕，跑出了屋子，任憑大雨打在她的身上。男主看到她這樣，心裡也不是滋味而追了出去，想要安慰她讓她回屋'}
+2024-04-03 02:52:59.293 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-03 02:52:59.297 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-03 02:54:41.822 | SUCCESS  | cellfunctions:download_mp4_with_progress:280 - Download successful for videos\裏番\OVA初恋時間。＃6[中文字幕].mp4
+2024-04-03 02:54:41.824 | SUCCESS  | cellfunctions:download_mp4_with_progress:291 - {'status_code': 200, 'url': 'https://vdownload-49.sb-cd.com/1/5/15632428-1080p.mp4?secure=P5q4nfzCjkdBGJxKdVWR5w,1712115787&m=49&d=1&_tid=15632428', 'filename': 'd:\\3DS\\test\\hanime_archivce\\videos\\裏番\\OVA初恋時間。＃6[中文字幕].mp4', 'download_status': True, 'size': '347.24MB'}
+2024-04-03 02:54:41.827 | SUCCESS  | m3u8tools.download_m3u8_file:get_base_link:99 - 基础链接获取完成
+2024-04-03 02:54:41.831 | SUCCESS  | m3u8tools.download_m3u8_file:__init__:73 - 初始化m3u8下载类完成
+2024-04-03 02:54:42.813 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:125 - 索引链接获取完成
+2024-04-03 02:54:44.183 | SUCCESS  | m3u8tools.download_m3u8_file:get_seg_link_list:214 - 所有分片链接获取完成
+2024-04-03 02:54:45.101 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:125 - 索引链接获取完成
+2024-04-03 02:54:45.104 | SUCCESS  | m3u8tools.download_m3u8_file:get_resolutions:145 - 分辨率获取完成,分辨率为:['1916', 'x', '1080']
+2024-04-03 02:54:45.992 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:125 - 索引链接获取完成
+2024-04-03 02:54:45.995 | SUCCESS  | m3u8tools.download_m3u8_file:get_frame_rate:171 - 帧率获取完成,帧率为:23.974
+2024-04-03 02:54:45.997 | INFO     | m3u8tools.download_m3u8_file:run:434 - ts链接数量: 447
+2024-04-03 02:55:36.869 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片387.ts完成,大小:1633720
+2024-04-03 02:55:39.139 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片374.ts完成,大小:746360
+2024-04-03 02:55:44.504 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片365.ts完成,大小:2752696
+2024-04-03 02:55:47.242 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片396.ts完成,大小:1429176
+2024-04-03 02:55:47.492 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片438.ts完成,大小:2352632
+2024-04-03 02:55:47.588 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片1.ts完成,大小:1296824
+2024-04-03 02:55:49.434 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片308.ts完成,大小:2193208
+2024-04-03 02:55:49.687 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片318.ts完成,大小:2518072
+2024-04-03 02:55:50.089 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片12.ts完成,大小:1781112
+2024-04-03 02:55:50.591 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片373.ts完成,大小:1227640
+2024-04-03 02:55:51.596 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片426.ts完成,大小:2214264
+2024-04-03 02:55:51.665 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片266.ts完成,大小:947896
+2024-04-03 02:55:51.860 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片244.ts完成,大小:1802168
+2024-04-03 02:55:52.321 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片324.ts完成,大小:2785784
+2024-04-03 02:55:52.683 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片212.ts完成,大小:1708920
+2024-04-03 02:55:52.941 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片9.ts完成,大小:1784120
+2024-04-03 02:55:53.057 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片118.ts完成,大小:1618680
+2024-04-03 02:55:53.088 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片200.ts完成,大小:2042808
+2024-04-03 02:55:53.623 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片198.ts完成,大小:2093944
+2024-04-03 02:55:53.672 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片138.ts完成,大小:950904
+2024-04-03 02:55:54.075 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片336.ts完成,大小:2105976
+2024-04-03 02:55:56.078 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片170.ts完成,大小:1390072
+2024-04-03 02:55:56.109 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片167.ts完成,大小:1901432
+2024-04-03 02:55:56.149 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片52.ts完成,大小:2394744
+2024-04-03 02:55:56.548 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片188.ts完成,大小:1732984
+2024-04-03 02:55:56.575 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片42.ts完成,大小:1612664
+2024-04-03 02:55:56.858 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片21.ts完成,大小:1522424
+2024-04-03 02:55:56.942 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片316.ts完成,大小:1802168
+2024-04-03 02:55:57.063 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片32.ts完成,大小:1438200
+2024-04-03 02:55:58.265 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片18.ts完成,大小:1745016
+2024-04-03 02:55:58.435 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片44.ts完成,大小:1642744
+2024-04-03 02:56:00.498 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片48.ts完成,大小:1751032
+2024-04-03 02:56:00.646 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片22.ts完成,大小:1534456
+2024-04-03 02:56:00.934 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片11.ts完成,大小:1678840
+2024-04-03 02:56:01.212 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片6.ts完成,大小:1871352
+2024-04-03 02:56:01.438 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片183.ts完成,大小:2226296
+2024-04-03 02:56:01.600 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片45.ts完成,大小:1898424
+2024-04-03 02:56:01.770 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片68.ts完成,大小:1820216
+2024-04-03 02:56:01.964 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片64.ts完成,大小:1904440
+2024-04-03 02:56:02.647 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片361.ts完成,大小:1772088
+2024-04-03 02:56:02.656 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片303.ts完成,大小:1281784
+2024-04-03 02:56:02.705 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片417.ts完成,大小:2024760
+2024-04-03 02:56:02.951 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片415.ts完成,大小:1612664
+2024-04-03 02:56:03.047 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片59.ts完成,大小:2295480
+2024-04-03 02:56:03.137 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片241.ts完成,大小:2554168
+2024-04-03 02:56:03.624 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片15.ts完成,大小:2075896
+2024-04-03 02:56:03.636 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片317.ts完成,大小:1757048
+2024-04-03 02:56:03.685 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片268.ts完成,大小:2027768
+2024-04-03 02:56:04.375 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片46.ts完成,大小:1805176
+2024-04-03 02:56:04.576 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片376.ts完成,大小:1510392
+2024-04-03 02:56:04.601 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片17.ts完成,大小:2867000
+2024-04-03 02:56:04.782 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片193.ts完成,大小:2779768
+2024-04-03 02:56:04.801 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片430.ts完成,大小:2169144
+2024-04-03 02:56:05.301 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片125.ts完成,大小:1988664
+2024-04-03 02:56:05.574 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片258.ts完成,大小:1648760
+2024-04-03 02:56:06.797 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片274.ts完成,大小:1720952
+2024-04-03 02:56:06.899 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片38.ts完成,大小:2557176
+2024-04-03 02:56:06.980 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片53.ts完成,大小:2048824
+2024-04-03 02:56:08.799 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片399.ts完成,大小:2229304
+2024-04-03 02:56:09.056 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片55.ts完成,大小:2710584
+2024-04-03 02:56:09.388 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片47.ts完成,大小:1787128
+2024-04-03 02:56:09.518 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片3.ts完成,大小:2671480
+2024-04-03 02:56:10.277 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片428.ts完成,大小:2051832
+2024-04-03 02:56:10.318 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片7.ts完成,大小:2006712
+2024-04-03 02:56:10.648 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片368.ts完成,大小:2608312
+2024-04-03 02:56:14.740 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片386.ts完成,大小:3682168
+2024-04-03 02:56:16.792 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片424.ts完成,大小:2244344
+2024-04-03 02:56:23.398 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片388.ts完成,大小:1492344
+2024-04-03 02:56:27.695 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片408.ts完成,大小:1363000
+2024-04-03 02:56:29.723 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片367.ts完成,大小:2785784
+2024-04-03 02:56:30.883 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片43.ts完成,大小:1618680
+2024-04-03 02:56:33.397 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片27.ts完成,大小:1540472
+2024-04-03 02:56:36.281 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片236.ts完成,大小:1654776
+2024-04-03 02:56:39.042 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片285.ts完成,大小:1441208
+2024-04-03 02:56:44.205 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片37.ts完成,大小:2036792
+2024-04-03 02:56:46.022 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片78.ts完成,大小:2232312
+2024-04-03 02:56:46.681 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片110.ts完成,大小:1567544
+2024-04-03 02:56:50.303 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片209.ts完成,大小:1639736
+2024-04-03 02:56:51.137 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片359.ts完成,大小:1540472
+2024-04-03 02:56:51.745 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片323.ts完成,大小:2274424
+2024-04-03 02:56:52.981 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片276.ts完成,大小:1675832
+2024-04-03 02:56:53.227 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片395.ts完成,大小:1498360
+2024-04-03 02:56:53.354 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片306.ts完成,大小:1507384
+2024-04-03 02:56:53.930 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片122.ts完成,大小:2175160
+2024-04-03 02:56:54.451 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片136.ts完成,大小:2006712
+2024-04-03 02:56:55.528 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片321.ts完成,大小:2036792
+2024-04-03 02:56:55.672 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片377.ts完成,大小:1329912
+2024-04-03 02:56:56.678 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片393.ts完成,大小:1414136
+2024-04-03 02:56:56.720 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片280.ts完成,大小:2060856
+2024-04-03 02:56:57.083 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片155.ts完成,大小:1720952
+2024-04-03 02:56:57.228 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片63.ts完成,大小:1994680
+2024-04-03 02:56:58.599 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片77.ts完成,大小:2060856
+2024-04-03 02:56:59.010 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片80.ts完成,大小:1486328
+2024-04-03 02:56:59.501 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片263.ts完成,大小:1874360
+2024-04-03 02:56:59.896 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片117.ts完成,大小:1603640
+2024-04-03 02:57:00.124 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片137.ts完成,大小:1459256
+2024-04-03 02:57:00.178 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片356.ts完成,大小:2211256
+2024-04-03 02:57:00.607 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片105.ts完成,大小:2367672
+2024-04-03 02:57:00.615 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片107.ts完成,大小:1570552
+2024-04-03 02:57:01.085 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片441.ts完成,大小:1997688
+2024-04-03 02:57:01.260 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片363.ts完成,大小:2740664
+2024-04-03 02:57:01.854 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片97.ts完成,大小:1853304
+2024-04-03 02:57:02.731 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片205.ts完成,大小:1961592
+2024-04-03 02:57:02.794 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片60.ts完成,大小:1979640
+2024-04-03 02:57:03.524 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片161.ts完成,大小:1739000
+2024-04-03 02:57:03.531 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片310.ts完成,大小:2484984
+2024-04-03 02:57:03.606 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片305.ts完成,大小:1501368
+2024-04-03 02:57:04.710 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片100.ts完成,大小:2075896
+2024-04-03 02:57:05.529 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片290.ts完成,大小:1808184
+2024-04-03 02:57:05.675 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片269.ts完成,大小:1877368
+2024-04-03 02:57:06.824 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片132.ts完成,大小:1531448
+2024-04-03 02:57:07.139 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片149.ts完成,大小:1522424
+2024-04-03 02:57:07.376 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片85.ts完成,大小:1856312
+2024-04-03 02:57:08.459 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片419.ts完成,大小:1423160
+2024-04-03 02:57:08.665 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片222.ts完成,大小:1366008
+2024-04-03 02:57:08.697 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片39.ts完成,大小:2316536
+2024-04-03 02:57:08.865 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片14.ts完成,大小:1726968
+2024-04-03 02:57:09.088 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片131.ts完成,大小:1624696
+2024-04-03 02:57:10.048 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片252.ts完成,大小:1191544
+2024-04-03 02:57:10.478 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片389.ts完成,大小:1359992
+2024-04-03 02:57:10.724 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片247.ts完成,大小:1714936
+2024-04-03 02:57:11.211 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片169.ts完成,大小:2003704
+2024-04-03 02:57:11.666 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片79.ts完成,大小:1393080
+2024-04-03 02:57:11.775 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片73.ts完成,大小:3122680
+2024-04-03 02:57:12.697 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片176.ts完成,大小:2491000
+2024-04-03 02:57:12.899 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片177.ts完成,大小:2632376
+2024-04-03 02:57:14.698 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片446.ts完成,大小:2454904
+2024-04-03 02:57:15.037 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片24.ts完成,大小:2626360
+2024-04-03 02:57:15.155 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片86.ts完成,大小:1940536
+2024-04-03 02:57:15.878 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片345.ts完成,大小:1841272
+2024-04-03 02:57:15.933 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片76.ts完成,大小:1970616
+2024-04-03 02:57:16.049 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片344.ts完成,大小:2214264
+2024-04-03 02:57:16.350 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片320.ts完成,大小:1991672
+2024-04-03 02:57:16.550 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片332.ts完成,大小:1149432
+2024-04-03 02:57:16.867 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片119.ts完成,大小:1735992
+2024-04-03 02:57:18.162 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片103.ts完成,大小:2617336
+2024-04-03 02:57:18.900 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片34.ts完成,大小:2096952
+2024-04-03 02:57:19.173 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片148.ts完成,大小:2069880
+2024-04-03 02:57:19.661 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片335.ts完成,大小:1817208
+2024-04-03 02:57:19.910 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片423.ts完成,大小:2412792
+2024-04-03 02:57:20.104 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片65.ts完成,大小:1519416
+2024-04-03 02:57:20.324 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片93.ts完成,大小:1949560
+2024-04-03 02:57:21.006 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片292.ts完成,大小:2027768
+2024-04-03 02:57:21.125 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片249.ts完成,大小:1916472
+2024-04-03 02:57:21.380 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片331.ts完成,大小:1549496
+2024-04-03 02:57:21.418 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片106.ts完成,大小:1627704
+2024-04-03 02:57:21.985 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片298.ts完成,大小:1814200
+2024-04-03 02:57:22.475 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片223.ts完成,大小:1811192
+2024-04-03 02:57:22.577 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片207.ts完成,大小:1883384
+2024-04-03 02:57:22.971 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片163.ts完成,大小:2271416
+2024-04-03 02:57:24.228 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片196.ts完成,大小:2205240
+2024-04-03 02:57:24.851 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片425.ts完成,大小:1615672
+2024-04-03 02:57:25.076 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片19.ts完成,大小:2039800
+2024-04-03 02:57:26.575 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片10.ts完成,大小:1841272
+2024-04-03 02:57:26.590 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片297.ts完成,大小:2235320
+2024-04-03 02:57:26.629 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片375.ts完成,大小:1787128
+2024-04-03 02:57:27.043 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片296.ts完成,大小:2084920
+2024-04-03 02:57:27.163 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片262.ts完成,大小:1787128
+2024-04-03 02:57:27.778 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片311.ts完成,大小:2253368
+2024-04-03 02:57:28.049 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片28.ts完成,大小:1624696
+2024-04-03 02:57:28.165 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片410.ts完成,大小:1591608
+2024-04-03 02:57:28.442 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片184.ts完成,大小:1537464
+2024-04-03 02:57:28.443 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片154.ts完成,大小:1997688
+2024-04-03 02:57:29.005 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片160.ts完成,大小:1729976
+2024-04-03 02:57:29.683 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片158.ts完成,大小:2003704
+2024-04-03 02:57:30.370 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片29.ts完成,大小:1850296
+2024-04-03 02:57:31.169 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片265.ts完成,大小:2087928
+2024-04-03 02:57:31.704 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片405.ts完成,大小:1543480
+2024-04-03 02:57:31.953 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片146.ts完成,大小:1856312
+2024-04-03 02:57:32.219 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片2.ts完成,大小:2160120
+2024-04-03 02:57:32.228 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片26.ts完成,大小:1546488
+2024-04-03 02:57:32.700 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片277.ts完成,大小:1561528
+2024-04-03 02:57:32.896 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片380.ts完成,大小:1588600
+2024-04-03 02:57:33.437 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片402.ts完成,大小:1814200
+2024-04-03 02:57:33.808 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片202.ts完成,大小:1856312
+2024-04-03 02:57:34.170 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片88.ts完成,大小:2111992
+2024-04-03 02:57:34.949 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片182.ts完成,大小:1742008
+2024-04-03 02:57:34.994 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片219.ts完成,大小:1576568
+2024-04-03 02:57:35.036 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片82.ts完成,大小:1609656
+2024-04-03 02:57:35.515 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片283.ts完成,大小:1335928
+2024-04-03 02:57:35.938 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片255.ts完成,大小:2160120
+2024-04-03 02:57:35.975 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片124.ts完成,大小:2057848
+2024-04-03 02:57:36.171 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片221.ts完成,大小:1702904
+2024-04-03 02:57:36.179 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片406.ts完成,大小:2102968
+2024-04-03 02:57:36.738 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片159.ts完成,大小:1961592
+2024-04-03 02:57:37.875 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片385.ts完成,大小:1369016
+2024-04-03 02:57:38.658 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片420.ts完成,大小:2181176
+2024-04-03 02:57:38.935 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片194.ts完成,大小:2042808
+2024-04-03 02:57:38.995 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片275.ts完成,大小:1399096
+2024-04-03 02:57:39.226 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片278.ts完成,大小:1567544
+2024-04-03 02:57:39.872 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片218.ts完成,大小:3459576
+2024-04-03 02:57:39.968 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片384.ts完成,大小:1832248
+2024-04-03 02:57:40.083 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片251.ts完成,大小:1260728
+2024-04-03 02:57:40.147 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片112.ts完成,大小:1784120
+2024-04-03 02:57:40.433 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片409.ts完成,大小:1504376
+2024-04-03 02:57:40.610 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片89.ts完成,大小:2115000
+2024-04-03 02:57:40.700 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片343.ts完成,大小:2205240
+2024-04-03 02:57:41.357 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片31.ts完成,大小:1429176
+2024-04-03 02:57:41.676 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片397.ts完成,大小:1856312
+2024-04-03 02:57:41.784 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片301.ts完成,大小:1552504
+2024-04-03 02:57:41.906 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片404.ts完成,大小:2130040
+2024-04-03 02:57:41.982 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片92.ts完成,大小:2906104
+2024-04-03 02:57:42.008 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片33.ts完成,大小:2081912
+2024-04-03 02:57:42.501 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片191.ts完成,大小:2081912
+2024-04-03 02:57:42.844 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片192.ts完成,大小:2445880
+2024-04-03 02:57:43.103 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片272.ts完成,大小:1754040
+2024-04-03 02:57:43.258 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片234.ts完成,大小:2620344
+2024-04-03 02:57:43.665 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片109.ts完成,大小:1865336
+2024-04-03 02:57:43.753 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片98.ts完成,大小:2084920
+2024-04-03 02:57:43.778 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片242.ts完成,大小:2018744
+2024-04-03 02:57:44.462 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片381.ts完成,大小:1510392
+2024-04-03 02:57:44.503 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片362.ts完成,大小:1955576
+2024-04-03 02:57:44.514 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片440.ts完成,大小:2078904
+2024-04-03 02:57:44.803 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片237.ts完成,大小:2042808
+2024-04-03 02:57:45.242 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片327.ts完成,大小:1946552
+2024-04-03 02:57:46.197 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片190.ts完成,大小:2370680
+2024-04-03 02:57:46.393 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片248.ts完成,大小:2882040
+2024-04-03 02:57:46.840 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片123.ts完成,大小:2614328
+2024-04-03 02:57:46.961 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片394.ts完成,大小:1507384
+2024-04-03 02:57:47.143 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片41.ts完成,大小:1964600
+2024-04-03 02:57:47.168 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片104.ts完成,大小:1970616
+2024-04-03 02:57:47.589 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片293.ts完成,大小:2039800
+2024-04-03 02:57:48.130 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片346.ts完成,大小:1669816
+2024-04-03 02:57:48.244 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片126.ts完成,大小:1408120
+2024-04-03 02:57:48.308 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片133.ts完成,大小:1405112
+2024-04-03 02:57:48.584 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片369.ts完成,大小:2686520
+2024-04-03 02:57:49.650 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片115.ts完成,大小:1735992
+2024-04-03 02:57:49.657 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片114.ts完成,大小:1856312
+2024-04-03 02:57:50.281 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片140.ts完成,大小:2235320
+2024-04-03 02:57:50.464 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片130.ts完成,大小:1612664
+2024-04-03 02:57:50.474 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片282.ts完成,大小:1480312
+2024-04-03 02:57:50.532 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片185.ts完成,大小:2033784
+2024-04-03 02:57:50.914 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片257.ts完成,大小:1910456
+2024-04-03 02:57:51.622 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片421.ts完成,大小:2127032
+2024-04-03 02:57:51.832 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片352.ts完成,大小:2124024
+2024-04-03 02:57:52.207 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片240.ts完成,大小:2818872
+2024-04-03 02:57:52.440 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片164.ts完成,大小:2385720
+2024-04-03 02:57:52.606 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片204.ts完成,大小:2160120
+2024-04-03 02:57:52.927 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片254.ts完成,大小:2108984
+2024-04-03 02:57:53.130 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片443.ts完成,大小:1723960
+2024-04-03 02:57:53.133 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片121.ts完成,大小:2154104
+2024-04-03 02:57:53.653 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片75.ts完成,大小:2090936
+2024-04-03 02:57:53.898 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片226.ts完成,大小:2105976
+2024-04-03 02:57:54.090 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片259.ts完成,大小:1717944
+2024-04-03 02:57:54.360 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片49.ts完成,大小:1862328
+2024-04-03 02:57:54.444 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片267.ts完成,大小:2096952
+2024-04-03 02:57:54.499 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片364.ts完成,大小:2996344
+2024-04-03 02:57:54.597 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片437.ts完成,大小:2256376
+2024-04-03 02:57:55.126 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片8.ts完成,大小:2193208
+2024-04-03 02:57:55.133 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片54.ts完成,大小:2764728
+2024-04-03 02:57:55.202 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片433.ts完成,大小:2241336
+2024-04-03 02:57:55.275 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片350.ts完成,大小:1781112
+2024-04-03 02:57:55.473 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片307.ts完成,大小:1732984
+2024-04-03 02:57:55.669 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片243.ts完成,大小:1769080
+2024-04-03 02:57:55.980 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片67.ts完成,大小:1961592
+2024-04-03 02:57:56.357 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片171.ts完成,大小:1967608
+2024-04-03 02:57:56.613 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片439.ts完成,大小:1793144
+2024-04-03 02:57:57.066 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片250.ts完成,大小:1245688
+2024-04-03 02:57:57.174 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片414.ts完成,大小:2620344
+2024-04-03 02:57:57.248 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片347.ts完成,大小:2241336
+2024-04-03 02:57:57.266 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片94.ts完成,大小:2500024
+2024-04-03 02:57:57.285 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片145.ts完成,大小:950904
+2024-04-03 02:57:57.600 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片95.ts完成,大小:2367672
+2024-04-03 02:57:57.616 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片382.ts完成,大小:2190200
+2024-04-03 02:57:57.622 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片326.ts完成,大小:2518072
+2024-04-03 02:57:57.721 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片260.ts完成,大小:2130040
+2024-04-03 02:57:57.782 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片135.ts完成,大小:2346616
+2024-04-03 02:57:57.810 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片230.ts完成,大小:2581240
+2024-04-03 02:57:59.013 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片360.ts完成,大小:1591608
+2024-04-03 02:57:59.028 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片328.ts完成,大小:1793144
+2024-04-03 02:57:59.493 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片444.ts完成,大小:2108984
+2024-04-03 02:57:59.555 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片427.ts完成,大小:2178168
+2024-04-03 02:57:59.604 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片403.ts完成,大小:1645752
+2024-04-03 02:57:59.918 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片407.ts完成,大小:1711928
+2024-04-03 02:57:59.979 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片220.ts完成,大小:2184184
+2024-04-03 02:58:00.074 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片90.ts完成,大小:2151096
+2024-04-03 02:58:00.104 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片447.ts完成,大小:2217272
+2024-04-03 02:58:00.304 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片330.ts完成,大小:2472952
+2024-04-03 02:58:00.321 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片179.ts完成,大小:2406776
+2024-04-03 02:58:00.649 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片246.ts完成,大小:1904440
+2024-04-03 02:58:00.659 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片416.ts完成,大小:4301816
+2024-04-03 02:58:00.808 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片341.ts完成,大小:1714936
+2024-04-03 02:58:00.865 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片72.ts完成,大小:2367672
+2024-04-03 02:58:00.921 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片302.ts完成,大小:1426168
+2024-04-03 02:58:00.994 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片281.ts完成,大小:2235320
+2024-04-03 02:58:01.004 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片102.ts完成,大小:2370680
+2024-04-03 02:58:01.069 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片291.ts完成,大小:1666808
+2024-04-03 02:58:01.161 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片201.ts完成,大小:2328568
+2024-04-03 02:58:01.452 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片187.ts完成,大小:3838584
+2024-04-03 02:58:01.457 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片214.ts完成,大小:2740664
+2024-04-03 02:58:01.537 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片152.ts完成,大小:2178168
+2024-04-03 02:58:01.555 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片197.ts完成,大小:2033784
+2024-04-03 02:58:01.759 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片379.ts完成,大小:1871352
+2024-04-03 02:58:01.892 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片20.ts完成,大小:4205560
+2024-04-03 02:58:01.984 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片270.ts完成,大小:1940536
+2024-04-03 02:58:01.993 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片174.ts完成,大小:2406776
+2024-04-03 02:58:02.015 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片289.ts完成,大小:3585912
+2024-04-03 02:58:02.052 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片23.ts完成,大小:2806840
+2024-04-03 02:58:02.143 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片101.ts完成,大小:2731640
+2024-04-03 02:58:02.784 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片40.ts完成,大小:2385720
+2024-04-03 02:58:03.000 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片199.ts完成,大小:2262392
+2024-04-03 02:58:03.234 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片87.ts完成,大小:2662456
+2024-04-03 02:58:03.612 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片50.ts完成,大小:3191864
+2024-04-03 02:58:03.877 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片413.ts完成,大小:2364664
+2024-04-03 02:58:03.933 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片56.ts完成,大小:2836920
+2024-04-03 02:58:04.106 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片144.ts完成,大小:2430840
+2024-04-03 02:58:04.202 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片354.ts完成,大小:2584248
+2024-04-03 02:58:04.822 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片150.ts完成,大小:2737656
+2024-04-03 02:58:05.076 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片295.ts完成,大小:1531448
+2024-04-03 02:58:05.279 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片372.ts完成,大小:2539128
+2024-04-03 02:58:05.290 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片351.ts完成,大小:1943544
+2024-04-03 02:58:05.313 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片215.ts完成,大小:2800824
+2024-04-03 02:58:05.576 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片436.ts完成,大小:2761720
+2024-04-03 02:58:05.847 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片383.ts完成,大小:1615672
+2024-04-03 02:58:06.215 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片113.ts完成,大小:1892408
+2024-04-03 02:58:06.268 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片432.ts完成,大小:2933176
+2024-04-03 02:58:06.556 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片287.ts完成,大小:2193208
+2024-04-03 02:58:06.716 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片312.ts完成,大小:2015736
+2024-04-03 02:58:06.739 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片391.ts完成,大小:1811192
+2024-04-03 02:58:06.803 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片279.ts完成,大小:3143736
+2024-04-03 02:58:06.858 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片398.ts完成,大小:2466936
+2024-04-03 02:58:07.037 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片338.ts完成,大小:2244344
+2024-04-03 02:58:07.055 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片195.ts完成,大小:2761720
+2024-04-03 02:58:07.098 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片261.ts完成,大小:2328568
+2024-04-03 02:58:07.111 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片348.ts完成,大小:2626360
+2024-04-03 02:58:07.171 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片57.ts完成,大小:2803832
+2024-04-03 02:58:07.263 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片153.ts完成,大小:2924152
+2024-04-03 02:58:07.393 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片166.ts完成,大小:2975288
+2024-04-03 02:58:07.421 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片235.ts完成,大小:2331576
+2024-04-03 02:58:07.476 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片4.ts完成,大小:2860984
+2024-04-03 02:58:07.500 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片224.ts完成,大小:2725624
+2024-04-03 02:58:07.824 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片232.ts完成,大小:2842936
+2024-04-03 02:58:07.836 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片168.ts完成,大小:2048824
+2024-04-03 02:58:08.165 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片180.ts完成,大小:2148088
+2024-04-03 02:58:08.367 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片342.ts完成,大小:2578232
+2024-04-03 02:58:09.048 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片5.ts完成,大小:3847608
+2024-04-03 02:58:09.097 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片142.ts完成,大小:2467119
+2024-04-03 02:58:09.300 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片435.ts完成,大小:2629368
+2024-04-03 02:58:09.362 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片151.ts完成,大小:1961592
+2024-04-03 02:58:09.381 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片231.ts完成,大小:3005368
+2024-04-03 02:58:09.436 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片333.ts完成,大小:2587256
+2024-04-03 02:58:09.643 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片71.ts完成,大小:2241336
+2024-04-03 02:58:09.653 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片66.ts完成,大小:3065528
+2024-04-03 02:58:10.566 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片315.ts完成,大小:2445880
+2024-04-03 02:58:10.677 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片370.ts完成,大小:5150072
+2024-04-03 02:58:10.841 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片111.ts完成,大小:3841592
+2024-04-03 02:58:10.905 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片213.ts完成,大小:2951224
+2024-04-03 02:58:10.938 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片239.ts完成,大小:2698552
+2024-04-03 02:58:11.172 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片173.ts完成,大小:2292472
+2024-04-03 02:58:11.280 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片288.ts完成,大小:2469944
+2024-04-03 02:58:11.653 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片357.ts完成,大小:2232312
+2024-04-03 02:58:11.703 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片313.ts完成,大小:2554168
+2024-04-03 02:58:11.812 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片203.ts完成,大小:4734968
+2024-04-03 02:58:12.146 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片127.ts完成,大小:3570872
+2024-04-03 02:58:12.338 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片422.ts完成,大小:2259384
+2024-04-03 02:58:12.435 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片62.ts完成,大小:3122680
+2024-04-03 02:58:12.461 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片229.ts完成,大小:2999352
+2024-04-03 02:58:12.464 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片340.ts完成,大小:3646072
+2024-04-03 02:58:12.472 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片337.ts完成,大小:2244344
+2024-04-03 02:58:12.622 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片366.ts完成,大小:2827896
+2024-04-03 02:58:12.625 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片233.ts完成,大小:4936504
+2024-04-03 02:58:12.714 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片225.ts完成,大小:2800824
+2024-04-03 02:58:12.824 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片58.ts完成,大小:2698552
+2024-04-03 02:58:13.215 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片355.ts完成,大小:4503352
+2024-04-03 02:58:13.354 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片81.ts完成,大小:3498680
+2024-04-03 02:58:14.148 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片401.ts完成,大小:3841592
+2024-04-03 02:58:14.353 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片96.ts完成,大小:4046136
+2024-04-03 02:58:15.416 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片325.ts完成,大小:4743992
+2024-04-03 02:58:16.624 | SUCCESS  | m3u8tools.download_m3u8_file:download_seg:330 - 下载分片371.ts完成,大小:3062520
+2024-04-03 02:58:16.626 | SUCCESS  | m3u8tools.download_m3u8_file:download_all_seg:359 - 所有分片下载完成
+2024-04-03 02:58:16.628 | INFO     | m3u8tools.download_m3u8_file:run:436 - 已下载ts文件数量: 447
+2024-04-03 02:58:20.785 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\5447fa5c-a477-4239-b2bd-2df1bb40197a.ts 成功
+2024-04-03 02:58:20.795 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\ff23631b-4bd4-437a-acd3-99356df33405.ts 成功
+2024-04-03 02:58:20.865 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\26d541ae-b7fd-4465-908a-366a9bd9f080.ts 成功
+2024-04-03 02:58:20.866 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\29e3a3c5-556d-4529-8963-ef8413f14849.ts 成功
+2024-04-03 02:58:22.226 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\c4d66c5c-399d-4899-815a-8de3cea4e5f3.ts 成功
+2024-04-03 02:58:22.252 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\d41827e7-94be-4449-94e1-33fab2fce54d.ts 成功
+2024-04-03 02:58:22.277 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\54227a00-3104-462f-ac72-4caa0efe974c.ts 成功
+2024-04-03 02:58:22.285 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\b32e6542-9b28-442c-a4c8-87d2abde7b6c.ts 成功
+2024-04-03 02:58:23.692 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\5b405cb5-7cc5-4444-b47e-00dd5cf39c29.ts 成功
+2024-04-03 02:58:23.728 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\4d0a4c6f-50ee-4ca9-ad89-a6999295323d.ts 成功
+2024-04-03 02:58:23.813 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\361316a9-8353-4a28-b9bd-912b1909e212.ts 成功
+2024-04-03 02:58:23.818 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\3dc6e513-d9ec-4d01-baa4-60e9b5d48dae.ts 成功
+2024-04-03 02:58:25.060 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\c3825d28-4140-4214-999e-edf64a74f74f.ts 成功
+2024-04-03 02:58:25.116 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\fcf608c4-0d74-4b6b-9a84-677656aa6b4e.ts 成功
+2024-04-03 02:58:25.197 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\50cb061f-8dea-487c-ad48-84d99e4305f2.ts 成功
+2024-04-03 02:58:25.298 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\f6e3f657-b83b-4a5f-b344-03da3a845e77.ts 成功
+2024-04-03 02:58:26.542 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\6bfd8279-a8d1-43cb-baa3-f6b45b4fca16.ts 成功
+2024-04-03 02:58:26.558 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\76de2ddd-8eb2-4017-975b-5d9afe4d705e.ts 成功
+2024-04-03 02:58:26.576 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\a91e7357-dfd1-4f59-b802-4a698c5e78c9.ts 成功
+2024-04-03 02:58:26.703 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\fc6e9dd4-6f78-47ab-a1b3-e0cf86a8650d.ts 成功
+2024-04-03 02:58:26.900 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\f8dbca80-c92e-467a-acb7-cd8f3f9ca8a5.ts 成功
+2024-04-03 02:58:27.750 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\cc710ae5-5348-4535-9539-f3a3d9fca06c.ts 成功
+2024-04-03 02:58:32.624 | SUCCESS  | m3u8tools.__init__:merge_ts_files_ffmpeg_unit:171 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35\temp_merge_mp4_cache\temp_merge_dir\d65c9123-dbf4-44ed-be27-b0cf7da834c8.ts 成功
+2024-04-03 02:58:33.236 | SUCCESS  | m3u8tools.__init__:merge_mp4_files_ffmpeg:277 - 合并视频文件成功, 输出文件: videos\裏番\OVA朝まで授業Chu！[中文字幕].mp4
+2024-04-03 02:58:33.252 | SUCCESS  | m3u8tools.download_m3u8_file:merge_mp4_files:390 - 合并完成
+2024-04-03 02:58:33.621 | SUCCESS  | m3u8tools.download_m3u8_file:clear_cache:426 - 清空缓存文件夹:d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\37f624068e525d57090da7851c3bee35
+2024-04-03 02:58:33.623 | SUCCESS  | cellfunctions:download_m3u8:338 - {'status_code': 200, 'url': 'https://abre-videos.cdn1122.com/_hls/videos/b/a/9/9/a/ba99a6833275df010d40945a549e12db1632563163-1916-1080-4061-h264.mp4/master.m3u8?validfrom=1711990099&validto=1712162899&rate=779712&hdl=-1&hash=zcUH8g4OHA0yGCSdSSshzbNm1oU%3D', 'filename': 'd:\\3DS\\test\\hanime_archivce\\videos\\裏番\\OVA朝まで授業Chu！[中文字幕].mp4', 'download_status': True, 'size': '683.60MB', 'm3u8': True}

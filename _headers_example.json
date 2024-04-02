@@ -1,0 +1,58 @@
+{
+  "请求头 (1.329 kB)": {
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Cookie",
+        "value": "XSRF-TOKEN=eyJpdiI6ImdLUFMrdzgwTk1WcjlOcGd6OG5SXC9nPT0iLCJ2YWx1ZSI6IjdSVDdhbHY4a3ViRVVkM29GYXhMN1I4NURoa3Jxa1A3dHVSdk5GYm5NSUZqSjdocFZEc0ZKaDZqeUJqS2h5U1UiLCJtYWMiOiJiMDczMjU1MjAzNDkxNTIxNGY5ZTA0NWQ1NmQ3OTgxYmU1YzJhMTY3YzJiNTg5MjgxNDI0MTM2ZWRjMGFjMjBjIn0%3D; hanime1_session=eyJpdiI6IlwvcUJSWWo3NjhDRGJVYm9QVUNPMHBBPT0iLCJ2YWx1ZSI6IjI5bDNFcXV4c1E4MFF5dE9pZW1XUUFabjNZekRJRmZUMHZMTG9SamZ6SlhpUGJ1Y09DWXFUdXRPb2xaUHdldDkiLCJtYWMiOiIyOWM5ZTYyYjA4YjJlZjExNTMxYmUzNWQyNjI3NWU0ZDgxM2NmZGY5OTA1MzZkNmY4NDE4YjI3ZWY3MTk0YmFkIn0%3D; _ga_2JNTSFQYRQ=GS1.1.1711466169.2.1.1711469576.0.0.0; _ga=GA1.2.1026078225.1711458223; cf_clearance=Po4hZnt.qidfZXJEg58jnxrBO1ee1wJmlMus0UQFKek-1711464620-1.0.1.1-ts5LFSlWR8MakePzBB5iUZGUp1CuhHxYUFRgke2.rJrFMtyhIAEbAp1gNczzDzeUcD62UmtP9y2rHpfz4Gl6_A; quality=1080; _gid=GA1.2.890784028.1711458341"
+      },
+      {
+        "name": "Host",
+        "value": "hanime1.me"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "document"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "navigate"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "none"
+      },
+      {
+        "name": "Sec-Fetch-User",
+        "value": "?1"
+      },
+      {
+        "name": "TE",
+        "value": "trailers"
+      },
+      {
+        "name": "Upgrade-Insecure-Requests",
+        "value": "1"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0"
+      }
+    ]
+  }
+}
