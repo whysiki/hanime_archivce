@@ -1,21 +1,6 @@
 from loguru import logger
 
-# 这是代理池
-# 请替换为你自己的代理池
-# 这里只是一个简单的示范
 
-
-# 配合错误重试装饰器使用
-
-# This is a proxy pool.
-# Please replace it with your own proxy pool.
-# This is just a simple demonstration.
-
-# Used in conjunction with error retry decorator.
-
-
-# a simple proxy pool
-# please replace it with your own proxy pool
 class ProxyPool:
 
     def __init__(self):

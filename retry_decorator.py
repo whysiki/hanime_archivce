@@ -1,6 +1,7 @@
 from config import *
 import random
-from network_tools import is_internet_available
+
+# from network_tools import is_internet_available
 
 
 # 错误随机等待函数

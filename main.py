@@ -18,8 +18,8 @@ class GetVideo:
         self.links_set_cache_path: str = ensure_file_exists(
             f"cache/links_set_cache_{self.genre}.pkl"
         )[-1]
-        self.links_set: set[str] = set()
-        self.links_set: set[str] = self.read_cache_links()  # type: ignore
+        # self.links_set: set[str] = set()
+        self.links_set: set[str] = self.read_cache_links()
 
     # 获取全部分类数据, 待用
     @staticmethod
@@ -40,13 +40,14 @@ class GetVideo:
     def get_append_genre_link(self, limit_page_number: int = 0):
         links_set = asyncio.run(get_genre_links(self.genre, limit_page_number))
         self.links_set = self.links_set.union(links_set)
-        self.genres = self.genres.add(genre)  # type: ignore
+        self.genres = self.genres.add(self.genre)
 
-        #
         # 保存缓存
         self.links_set_cache[self.genre] = self.links_set
         with open(self.links_set_cache_path, "wb") as f:
             pickle.dump(self.links_set_cache, f)
+
+        return self.links_set
 
     # 读取缓存
     def read_cache_links(self):
@@ -93,7 +94,7 @@ class GetVideo:
 
         with ProcessPoolExecutor(max_workers=MERGE_TS_PROCESSES) as executor:
             parse_tasks = [
-                executor.submit(parse, source_json["source"])  # type: ignore
+                executor.submit(parse, source_json["source"])
                 for source_json in sources_jsons
                 if isinstance(source_json, dict)
                 and source_json.get("status_code") == 200
@@ -188,23 +189,3 @@ if __name__ == "__main__":
     get_video = GetVideo(save_path=SAVE_PATH, gengre="裏番")
     asyncio.run(get_video.process_links(number=2))
     print("下载完成")
-    # get_video.get_sources(number=200)
-    # number : wanna download number for this gengre
-
-    # 获取全部分类
-    # all_genres = GetVideo.get_all_genres() {'泡麵番', '裏番', 'Cosplay', '3D動畫', '同人作品', 'Motion Anime'}
-    # print(
-    #     all_genres
-    # #)  # {'泡麵番', '裏番', 'Cosplay', '3D動畫', '同人作品', 'Motion Anime'}
-    #     get_video = GetVideo(save_path="videos", gengre=genre)
-
-    # if not get_video.links_set:
-    # get_video = GetVideo(save_path="videos", gengre="裏番")
-    # asyncio.run(get_video.process_links(number=20))
-    # print("下载完成")
-
-    # 清除缓存
-    # GetVideo.clear_cache(gengre="泡麵番")
-
-    # for genre in {"泡麵番", "裏番", "Cosplay", "3D動畫", "同人作品", "Motion Anime"}:
-    #    get_video = GetVideo(save_path="videos", gengre=genre)
