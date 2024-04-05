@@ -17,8 +17,11 @@ git clone --single-branch --branch 2 https://github.com/whysiki/hanime_archivce.
 ## 配置
 
 安装 ffmpeg , 自行下载[ffmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest).
+
 我用的是 gpl-shared 版本, 下载后解压到某个目录,
+
 并配置环境变量(可选).
+
 在使用前，请查看 `config.py` 进行相应的配置。
 
 ## 使用

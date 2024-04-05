@@ -47,7 +47,7 @@ AIOHTTP_CONNECTION_LIMIT = 700  # aiohttp最大连接数
 
 # 下载和缓存配置
 TO_DOWNLOAD_M3U8 = True  # 是否下载m3u8视频,默认不下载,因为可能堵塞mp4下载
-To_DOWNLOAD_MP4 = True  # 是否下载mp4视频
+To_DOWNLOAD_MP4 = False  # 是否下载mp4视频
 SAVE_PATH = "videos"  # 下载视频保存路径
 SOURCE_CACHE_DIR = "cache/source/sql/source_cache.db"  # 源码缓存目录
 BATCH_SIZE = 20  # 分批合成
@@ -126,6 +126,32 @@ assert isinstance(AIOHTTP_CONNECTION_LIMIT, int), "请配置AIOHTTP_CONNECTION_L
 assert isinstance(MERGE_TS_PROCESSES, int), "请配置MERGE_TS_PROCESSES"
 
 assert isinstance(FFMPEG_EXE_PATH, str), "请配置FFMPEG_EXE_PATH"
+
+# print(f"配置文件加载完成,当前配置如下:\n")
+# print(f"HOST:{HOST}")
+# print(f"HEADERS:{HEADERS}")
+# print(f"PROXIES:{PROXIES}")
+# print(f"PROXIES_POOL:{PROXIES_POOL}")
+# print(f"TO_USE_PROXY_POOL:{TO_USE_PROXY_POOL}")
+# print(f"SEMAPHORE_SIZE:{SEMAPHORE_SIZE}")
+# print(f"TS_SEMAPHORE_SIZE:{TS_SEMAPHORE_SIZE}")
+# print(f"AIOHTTP_CONNECTION_LIMIT:{AIOHTTP_CONNECTION_LIMIT}")
+# print(f"TO_DOWNLOAD_M3U8:{TO_DOWNLOAD_M3U8}")
+# print(f"To_DOWNLOAD_MP4:{To_DOWNLOAD_MP4}")
+# print(f"SAVE_PATH:{SAVE_PATH}")
+# print(f"SOURCE_CACHE_DIR:{SOURCE_CACHE_DIR}")
+# print(f"BATCH_SIZE:{BATCH_SIZE}")
+# print(f"PARSE_CACHE_DIR:{PARSE_CACHE_DIR}")
+# print(f"TO_CLEAR_CACHE:{TO_CLEAR_CACHE}")
+# print(f"MERGE_TS_PROCESSES:{MERGE_TS_PROCESSES}")
+# print(f"TO_DELETE_FAILED_VIDEOS_IN_LAST_RETRY:{TO_DELETE_FAILED_VIDEOS_IN_LAST_RETRY}")
+# print(f"FFMPEG_EXE_PATH:{FFMPEG_EXE_PATH}")
+# print(f"RANDOM_SLEEP_RANGE:{RANDOM_SLEEP_RANGE}")
+# print(f"GET_SOURSE_RETRIES:{GET_SOURSE_RETRIES}")
+# print(f"RETRIES:{RETRIES}")
+# print(f"TS_RETRIES:{TS_RETRIES}")
+# print(f"DOWNLOAD_VIDEO_RETRIES:{DOWNLOAD_VIDEO_RETRIES}")
+# print(f"TIME_OUT:{TIME_OUT}")
 
 time_now_day = datetime.datetime.now().strftime("%Y-%m-%d")
 log_path = os.path.join(os.path.dirname(__file__), "log", f"{time_now_day}.log")

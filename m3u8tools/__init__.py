@@ -127,6 +127,7 @@ def merge_ts_files_ffmpeg_unit(
     with tempfile.NamedTemporaryFile(
         delete=False,
         dir=tem_params_file,
+        suffix=".txt",
     ) as temp_file:
         # 写入文件路径到临时文件中
         for input_file in input_files:

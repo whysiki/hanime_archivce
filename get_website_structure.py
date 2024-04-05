@@ -59,7 +59,7 @@ async def get_single_page_links(genre: str, page: int) -> set[str]:
     # 处理
     links_set = {i.get("href", "").strip() for i in a_elems}  # type: ignore
     logger.success(f"分类:{genre},第{page}页获取成功")
-    logger.success(f"分类:{genre},当前页共有{len(links_set)}个链接")
+    logger.info(f"分类:{genre},当前页共有{len(links_set)}个链接")
     return links_set
 
 

@@ -79,7 +79,20 @@ def parse(source: str, to_print_json: bool = False) -> Dict[str, Union[str, bool
             ].strip()
             assert description, "Failed to parse description"
 
-            json_data = dict(name=name, contentUrl=contentUrl, description=description)
+            # "uploadDate": "2024-04-02T01:34:17+00:00",
+            # "uploadDate": "2024-03-21T02:26:10+00:00",
+            uploadDate = re.findall(r'"uploadDate":"([^"]+)",', cleaned_json_data)[
+                0
+            ].strip()
+
+            assert uploadDate, "Failed to parse uploadDate"
+
+            json_data = dict(
+                name=name,
+                contentUrl=contentUrl,
+                description=description,
+                uploadDate=uploadDate,
+            )
 
             # Print JSON data
             if to_print_json:
@@ -87,11 +100,14 @@ def parse(source: str, to_print_json: bool = False) -> Dict[str, Union[str, bool
 
             logger.success(f"Parsed JSON data: {json_data}")
 
-            return dict(
-                name=json_data["name"],
-                contentUrl=json_data["contentUrl"],
-                description=json_data["description"],
-            )
+            return json_data
+
+            # return dict(
+            #     name=json_data["name"],
+            #     contentUrl=json_data["contentUrl"],
+            #     description=json_data["description"],
+            #     uploadDate=uploadDate,
+            # )
 
     except Exception as e:
         error_type = type(e).__name__

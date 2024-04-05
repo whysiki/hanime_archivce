@@ -18,7 +18,6 @@ class GetVideo:
         self.links_set_cache_path: str = ensure_file_exists(
             f"cache/links_set_cache_{self.genre}.pkl"
         )[-1]
-        # self.links_set: set[str] = set()
         self.links_set: set[str] = self.read_cache_links()
 
     # 获取全部分类数据, 待用
@@ -39,7 +38,9 @@ class GetVideo:
     # 获取分类链接
     def get_append_genre_link(self, limit_page_number: int = 0):
         links_set = asyncio.run(get_genre_links(self.genre, limit_page_number))
-        self.links_set = self.links_set.union(links_set)
+        self.links_set = (
+            self.links_set.union(links_set) if hasattr(self, "links_set") else links_set
+        )
         self.genres = self.genres.add(self.genre)
 
         # 保存缓存
@@ -71,7 +72,10 @@ class GetVideo:
         except:
 
             try:
-                self.get_append_genre_link()
+                links_set = self.get_append_genre_link()
+
+                return links_set
+
             except Exception as e:
                 error_type = type(e).__name__
                 logger.error(
@@ -186,6 +190,13 @@ class GetVideo:
 
 if __name__ == "__main__":
 
-    get_video = GetVideo(save_path=SAVE_PATH, gengre="裏番")
-    asyncio.run(get_video.process_links(number=2))
-    print("下载完成")
+    if 0:
+        pass
+        # shutil.rmtree(SAVE_PATH, ignore_errors=True)
+        # shutil.rmtree("cache", ignore_errors=True)
+
+    if 1:
+
+        get_video = GetVideo(save_path=SAVE_PATH, gengre="裏番")
+        asyncio.run(get_video.process_links(number=2))
+    # print("下载完成")
