@@ -24,6 +24,7 @@ import multiprocessing
 import math
 from concurrent.futures import ProcessPoolExecutor
 import datetime
+import shutil
 
 # 大部分配置都在这里
 
@@ -56,6 +57,28 @@ MERGE_TS_PROCESSES = math.floor(
     multiprocessing.cpu_count() / 3
 )  # 合并ts进程数 和解析进程数
 TO_DELETE_FAILED_VIDEOS_IN_LAST_RETRY = False  # 最后一次重试结束后是否删除文件
+
+
+# ffmpeg配置
+# ffmpeg-n7.0-latest-win64-gpl-shared-7.0\bin\ffmpeg.exe
+FFMPEG_EXE_PATH = (
+    shutil.which("ffmpeg")
+    if not os.path.exists(
+        os.path.join(
+            os.path.dirname(__file__),
+            "ffmpeg-n7.0-latest-win64-gpl-shared-7.0",
+            "bin",
+            "ffmpeg.exe",
+        )
+    )
+    else os.path.join(
+        os.path.dirname(__file__),
+        "ffmpeg-n7.0-latest-win64-gpl-shared-7.0",
+        "bin",
+        "ffmpeg.exe",
+    )
+)
+
 # 转换配置
 # # 不要动 弃用
 # CONVERT_TS_TO_MP4 = False  # 是否转换ts为mp4, 对于m3u8视频,需要转换,但是因为调用的是ffmpeg,可能会出现堵塞,所以默认不转换,这里是同步
@@ -102,6 +125,7 @@ assert isinstance(AIOHTTP_CONNECTION_LIMIT, int), "请配置AIOHTTP_CONNECTION_L
 
 assert isinstance(MERGE_TS_PROCESSES, int), "请配置MERGE_TS_PROCESSES"
 
+assert isinstance(FFMPEG_EXE_PATH, str), "请配置FFMPEG_EXE_PATH"
 
 time_now_day = datetime.datetime.now().strftime("%Y-%m-%d")
 log_path = os.path.join(os.path.dirname(__file__), "log", f"{time_now_day}.log")

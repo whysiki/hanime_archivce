@@ -7,3 +7,4 @@
 *.sqlite
 /cache/parse
 /cache/source
+/ffmpeg-n7.0-latest-win64-gpl-shared-7.0

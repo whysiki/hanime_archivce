@@ -1,33 +1,8 @@
 ## clone
 
 ```shell
-git clone --single-branch --branch 2.0 https://github.com/PCCAG/hanime_videos_spider.git
+git clone --single-branch --branch 2 https://github.com/whysiki/hanime_archivce.git
 ```
-
-## Description
-
-This is an asynchronous web crawler tool designed for the website hanime.
-
-- **Resume Download Support**: Supports resuming downloads after interruption, ensuring that download tasks are not lost due to unexpected interruptions.
-- **Simultaneous Downloads of Multiple Categories**: Can download multiple videos of different categories simultaneously, improving download efficiency.
-- **Result Caching**: Supports result caching functionality, allowing caching of results as long as the source code parsing result is valid, reducing redundant requests and saving network resources and time.
-- **Parameter Update Requests**: Only reissues requests when function parameters are updated, reducing unnecessary network requests and improving efficiency.
-
-- **Asynchronous and resumable upload of M3U8 streams is supported, but make sure you have a strong enough proxy pool🤣🤔**
-
-## Configuration
-
-Before using, please refer to `config.py` for appropriate configuration.
-
-## Usage
-
-1. Firstly, configure `_cookies_.json` and `_headers_example.json` in `config.py` according to personal needs. The content should conform to the format of the Firefox browser.
-
-2. Then, edit the configuration parameters such as download directory, number of downloads, and download categories in `main.py` as needed.
-
-3. Start `main.py` and wait for the downloads to complete.
-
-4. If errors occur, check the log files in the `log/` directory and take appropriate actions based on the error messages.
 
 ## 说明
 
@@ -41,6 +16,9 @@ Before using, please refer to `config.py` for appropriate configuration.
 
 ## 配置
 
+安装 ffmpeg , 自行下载[ffmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest).
+我用的是 gpl-shared 版本, 下载后解压到某个目录,
+并配置环境变量(可选).
 在使用前，请查看 `config.py` 进行相应的配置。
 
 ## 使用

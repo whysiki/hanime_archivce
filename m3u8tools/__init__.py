@@ -24,10 +24,11 @@ import uuid
 import concurrent.futures
 import fake_useragent
 import tempfile
-from config import RANDOM_SLEEP_RANGE
+from config import RANDOM_SLEEP_RANGE, FFMPEG_EXE_PATH
 import random
 
 # from config import *
+FFMPEG_EXE_PATH = FFMPEG_EXE_PATH
 
 
 def read_headers_from_json(
@@ -93,6 +94,7 @@ def merge_ts_files_ffmpeg_unit(
     overwrite=True,
     command_list: list[str] = [],
     temp_dir: str = "temp_ffmpeg_cache",
+    ffmpeg_exe_path: str = FFMPEG_EXE_PATH,
 ):
     if tuple_files_output_file and len(tuple_files_output_file) == 2:
         input_files, output_file = tuple_files_output_file
@@ -132,7 +134,8 @@ def merge_ts_files_ffmpeg_unit(
 
         # 构建 FFmpeg 命令来合并 TS 文件
         ffmpeg_command = [
-            "ffmpeg",
+            # "ffmpeg",
+            ffmpeg_exe_path,
             "-f",
             "concat",
             "-safe",
