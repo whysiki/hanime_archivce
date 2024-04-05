@@ -48,10 +48,13 @@ def retry_on_error(
 # 最后一次重试结束后的处理函数, 删除文件
 def process_last_retry_func_mp4_to_delete_filename(kwargs):
 
-    filename = kwargs["filename"]
+    if TO_DELETE_FAILED_VIDEOS_IN_LAST_RETRY:
+        filename = kwargs["filename"]
 
-    if os.path.exists(filename):
+        if os.path.exists(filename):
 
-        os.remove(filename)
+            os.remove(filename)
 
-        logger.critical(f"\nDeleted {filename} after all attempts failed\n")
+            logger.critical(f"\nDeleted {filename} after all attempts failed\n")
+
+    logger.critical(f"\nAll attempts failed for function {kwargs['func'].__name__}\n")

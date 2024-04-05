@@ -55,7 +55,7 @@ TO_CLEAR_CACHE = True  # 是否清理m3u8缓存
 MERGE_TS_PROCESSES = math.floor(
     multiprocessing.cpu_count() / 3
 )  # 合并ts进程数 和解析进程数
-
+TO_DELETE_FAILED_VIDEOS_IN_LAST_RETRY = False  # 最后一次重试结束后是否删除文件
 # 转换配置
 # # 不要动 弃用
 # CONVERT_TS_TO_MP4 = False  # 是否转换ts为mp4, 对于m3u8视频,需要转换,但是因为调用的是ffmpeg,可能会出现堵塞,所以默认不转换,这里是同步
