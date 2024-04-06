@@ -42,8 +42,8 @@ TO_USE_PROXY_POOL = True  # 是否使用代理池
 
 # 并发和连接配置
 SEMAPHORE_SIZE = 20  # 默认并发数
-TS_SEMAPHORE_SIZE = 20  # m3u8下载ts并发数
-AIOHTTP_CONNECTION_LIMIT = 700  # aiohttp最大连接数
+TS_SEMAPHORE_SIZE = 40  # m3u8下载ts并发数
+AIOHTTP_CONNECTION_LIMIT = 1000  # aiohttp最大连接数
 
 # 下载和缓存配置
 TO_DOWNLOAD_M3U8 = True  # 是否下载m3u8视频,默认不下载,因为可能堵塞mp4下载
