@@ -95,31 +95,17 @@ assert SEMAPHORE_SIZE > 0, "请配置SEMAPHORE_SIZE"
 assert (
     len(RANDOM_SLEEP_RANGE) == 2 and RANDOM_SLEEP_RANGE[0] < RANDOM_SLEEP_RANGE[1]
 ), "请正确配置RANDOM_SLEEP_RANGE"
-
 assert ensure_file_exists(SOURCE_CACHE_DIR)[0], "请配置SOURCE_CACHE_DIR"
-
 assert ensure_file_exists(PARSE_CACHE_DIR)[0], "请配置PARSE_CACHE_DIR"
-
-
 assert isinstance(RETRIES, int), "请配置RETRIES"
-
 assert isinstance(GET_SOURSE_RETRIES, int), "请配置GET_SOURSE_RETRIES"
-
 assert isinstance(DOWNLOAD_VIDEO_RETRIES, int), "请配置DOWNLOAD_VIDEO_RETRIES"
-
 assert isinstance(TIME_OUT, int), "请配置TIME_OUT"
-
-
 assert isinstance(TO_USE_PROXY_POOL, bool), "请配置TO_USE_PROXY_POOL"
-
 assert isinstance(PROXIES_POOL, ProxyPool), "请配置PROXIES_POOL"
-
 assert isinstance(TS_SEMAPHORE_SIZE, int), "请配置TS_SEMAPHORE_SIZE"
-
 assert isinstance(AIOHTTP_CONNECTION_LIMIT, int), "请配置AIOHTTP_CONNECTION_LIMIT"
-
 assert isinstance(PERSE_MAX_PROCESSES, int), "请配置MERGE_TS_PROCESSES"
-
 assert isinstance(FFMPEG_EXE_PATH, str), "请配置FFMPEG_EXE_PATH"
 
 

@@ -1,4 +1,5 @@
 # 对于函数输出的结果进行断言
+# 来决定是否进行缓存
 # Assertion function for verifying the output of a function, checking if the function output is normal.
 
 

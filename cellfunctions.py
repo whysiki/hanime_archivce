@@ -131,6 +131,32 @@ def get_random_user_agent() -> str:
     return ua.random
 
 
+def handle_down_other_error(e: Exception, filename: str, url: str) -> dict:
+    logger.error(f"Download failed for {filename}, url: {url}")
+    error_type = type(e).__name__
+    logger.error(f"Error details: {str(e)},error type: {error_type}")
+
+    return dict(error=str(e), url=url, error_type=error_type, download_status=False)  # type: ignore
+
+
+def create_session() -> aiohttp.ClientSession:
+    timeout = aiohttp.ClientTimeout(total=TIME_OUT)
+    connector = aiohttp.TCPConnector(
+        verify_ssl=False,
+        limit=AIOHTTP_CONNECTION_LIMIT,
+        enable_cleanup_closed=True,
+        ttl_dns_cache=None,
+        use_dns_cache=True,
+        force_close=True,
+        timeout_ceil_threshold=30,
+    )
+    return aiohttp.ClientSession(
+        headers={"User-Agent": get_random_user_agent()},
+        connector=connector,
+        timeout=timeout,
+    )
+
+
 @retry_on_error(
     retries=DOWNLOAD_VIDEO_RETRIES,
     process_last_retry_func=process_last_retry_func_mp4_to_delete_filename,
@@ -144,28 +170,19 @@ async def download_mp4_with_progress(
     enable_filter: bool = True,
 ) -> Dict[str, Union[str, bool]]:
 
-    def other_error_process(e: Exception) -> Dict[str, Union[str, bool]]:
-
-        logger.error(f"Download failed for {filename}, url: {url}")
-        error_type = type(e).__name__
-        logger.error(f"Error details: {str(e)},error type: {error_type}")
-
-        return dict(error=str(e), url=url, error_type=error_type, download_status=False)
-
     # first step
     try:
         # Check if the URL and filename are valid
-        assert (
+        if not (
             isinstance(url, str)
             and isinstance(filename, str)
             and url
             and filename
             and ".mp4" in url
             and ".mp4" in filename
-            # and "m3u8" not in url
-        ), f"URL or filenname un-normal, {url}, {filename}"
+        ):
+            raise ValueError(f"URL or filename un-normal, {url}, {filename}")
 
-        # if "m3u8" in url
         if ".m3u8" in url:
             return dict(
                 error="m3u8 file is not supported",
@@ -173,134 +190,77 @@ async def download_mp4_with_progress(
                 download_status=False,
                 filename=filename,
                 m3u8=True,
-                # proxies=proxies,
             )  # type: ignore
 
         if not To_DOWNLOAD_MP4:
-
             logger.debug(f"关闭mp4下载 : {filename}")
-
-            if os.path.exists(filename):
-
-                os.remove(filename)
-
+            file_path = Path(filename)
+            if file_path.exists():
+                file_path.unlink()
                 logger.debug(f"删除预生成空文件: {filename}")
-
             return dict()
 
-        proxy = proxies.get("http://") if proxies else None
+        proxy = next(iter(proxies.values()), None) if proxies else None
 
         if not proxy:
             logger.warning(f"download_mp4_with_progress Proxy is empty or None.")
 
     except Exception as e:
-
-        return other_error_process(e=e)
+        return handle_down_other_error(e, filename, url)
 
     # next step
     else:
         try:
-
-            timeout = aiohttp.ClientTimeout(total=TIME_OUT)
-
-            # 配置TCPConnector连接
-
-            connector = aiohttp.TCPConnector(
-                verify_ssl=False,
-                limit=AIOHTTP_CONNECTION_LIMIT,
-                enable_cleanup_closed=True,
-                ttl_dns_cache=None,
-                use_dns_cache=True,
-                force_close=True,
-                timeout_ceil_threshold=30,
-                # keepalive_timeout=30,
-            )
-
-            async with aiohttp.ClientSession(
-                headers={"User-Agent": get_random_user_agent()},
-                connector=connector,
-                timeout=timeout,
-            ) as session:
-
-                # initialize the downloaded size
-                downloaded_size: int = 0
-                if (
-                    os.path.exists(filename)
-                    and os.path.isfile(filename)
-                    and os.path.getsize(filename) > 0
-                ):
-                    # Get the size of the file that has already been downloaded
-                    downloaded_size = os.path.getsize(filename)
-
-                # Set the headers to resume the download from the last downloaded size
-                headers = (
-                    {"Range": f"bytes={downloaded_size}-"} if downloaded_size else {}
+            session = create_session()
+            file_path = Path(filename)
+            downloaded_size = file_path.stat().st_size if file_path.exists() else 0
+            headers = {"Range": f"bytes={downloaded_size}-"} if downloaded_size else {}
+            async with session.get(url, proxy=proxy, headers=headers) as response:
+                if response.status not in [200, 206, 416]:
+                    raise ValueError(
+                        f"Download failed for {filename}, status code: {response.status}, url: {url}"
+                    )
+                total_size = (
+                    int(response.headers.get("content-length", 0)) + downloaded_size
                 )
-                async with session.get(url, proxy=proxy, headers=headers) as response:
-
-                    # status code 200 indicates success
-                    assert (
-                        response.status == 200
-                        or response.status == 206  # 206 Partial Content
-                        or response.status == 416  # 416 Requested Range Not Satisfiable
-                    ), f"Download failed for {filename}, status code: {response.status}, url: {url}"
-
-                    # Get the total size of the file to download
-                    total_size = (
-                        int(response.headers.get("content-length", 0)) + downloaded_size
-                    )
-
-                    assert total_size != 0, f"No content to download from {url}"
-
-                    bar = tqdm(
-                        total=total_size, desc=f"{filename}", unit="b", smoothing=0.5
-                    )
-                    # Update the progress bar with the downloaded size
-                    bar.update(downloaded_size)
-
-                    download_mode = "wb" if downloaded_size == 0 else "ab"
-
-                    async with aiofiles.open(filename, download_mode) as file:
-
-                        pices_size: int = 8192
-
-                        while True:
-                            chunk = await response.content.read(pices_size)
-                            if not chunk:
-                                break
-                            await file.write(chunk)
-                            bar.update(len(chunk))
-                            downloaded_size += len(chunk)
-                    bar.close()
-
-                    # Check if the downloaded size is equal to the total size
-                    assert downloaded_size >= total_size, "Download failed"
-
-                    file_exist_size = os.path.getsize(filename)
-                    assert file_exist_size >= total_size, "Download failed"
-
-                    assert (
-                        enable_filter
-                        and downloaded_size > filter_size
-                        and file_exist_size > filter_size
-                    ), "Download filter failed"
+                if total_size == 0:
+                    raise ValueError(f"No content to download from {url}")
+                bar = tqdm(
+                    total=total_size, desc=f"{filename}", unit="b", smoothing=0.5
+                )
+                bar.update(downloaded_size)
+                download_mode = "wb" if downloaded_size == 0 else "ab"
+                async with aiofiles.open(filename, download_mode) as file:
+                    pices_size: int = 8192
+                    while True:
+                        chunk = await response.content.read(pices_size)
+                        if not chunk:
+                            break
+                        await file.write(chunk)
+                        bar.update(len(chunk))
+                        downloaded_size += len(chunk)
+                bar.close()
+                if (
+                    downloaded_size < total_size
+                    or file_path.stat().st_size < total_size
+                ):
+                    raise ValueError("Download failed")
+                if enable_filter and (
+                    downloaded_size <= filter_size
+                    or file_path.stat().st_size <= filter_size
+                ):
+                    raise ValueError("Download filter failed")
 
         except Exception as e:
-
-            return other_error_process(e=e)
-
-        # finally success
+            return handle_down_other_error(e, filename, url)
 
         else:
-
             logger.success(f"Download successful for {filename}")
-
-            # Get the size of the downloaded file
-            size, unit = convert_bytes_to_megabytes(os.path.getsize(filename))
+            size, unit = convert_bytes_to_megabytes(file_path.stat().st_size)
             json_data = dict(
                 status_code=response.status,
                 url=url,
-                filename=os.path.abspath(filename),
+                filename=str(file_path.resolve()),
                 download_status=True,
                 size=f"{size:.2f}{unit}",
             )
@@ -312,25 +272,9 @@ async def download_mp4_with_progress(
     retries=TS_RETRIES,
     process_last_retry_func=process_last_retry_func_mp4_to_delete_filename,
 )
-async def download_m3u8(url: str, filename: str, proxies: Optional[dict[str, str]]):
-
-    def convert_bytes_to_megabytes(bytes):
-        mb = bytes / (1024 * 1024)
-        if mb >= 1:
-            return mb, "MB"
-        kb = bytes / 1024
-        if kb >= 1:
-            return kb, "KB"
-        return bytes, "bytes"
-
-    def other_error_process(e: Exception) -> dict[str, str]:
-
-        logger.error(f"Download failed for {filename}, url: {url}")
-        error_type = type(e).__name__
-        logger.error(f"Error details: {str(e)},error type: {error_type}")
-
-        return dict(error=str(e), url=url, error_type=error_type, download_status=False)  # type: ignore
-
+async def download_m3u8(
+    url: str, filename: str, proxies: Optional[dict[str, str]]
+) -> dict:
     try:
         ensure_file_exists(filename)
         download_class = M3u8_download(
@@ -339,19 +283,19 @@ async def download_m3u8(url: str, filename: str, proxies: Optional[dict[str, str
         out_path = await download_class.run(to_clear_cache=TO_CLEAR_CACHE)
         out_path = os.path.abspath(out_path)
     except Exception as e:
-        return other_error_process(e=e)
-    else:
-        try:
-            size, unit = convert_bytes_to_megabytes(os.path.getsize(filename))
-            json_data = dict(
-                status_code=200,
-                url=url,
-                filename=os.path.abspath(filename),
-                download_status=True,
-                size=f"{size:.2f}{unit}",
-                m3u8=True,
-            )
-            logger.success(json_data)
-            return json_data
-        except Exception as e:
-            return other_error_process(e=e)
+        return handle_down_other_error(e, filename, url)
+
+    try:
+        size, unit = convert_bytes_to_megabytes(os.path.getsize(filename))
+        json_data = dict(
+            status_code=200,
+            url=url,
+            filename=os.path.abspath(filename),
+            download_status=True,
+            size=f"{size:.2f}{unit}",
+            m3u8=True,
+        )
+        logger.success(json_data)
+        return json_data
+    except Exception as e:
+        return handle_down_other_error(e, filename, url)

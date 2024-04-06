@@ -1178,3 +1178,161 @@
 2024-04-06 15:48:44.973 | SUCCESS  | m3u8tools:merge_mp4_files_ffmpeg:234 - 合并视频文件成功, 输出文件: d:\3DS\test\hanime_archivce\m3u8tools\test\test.mp4
 2024-04-06 15:50:08.675 | SUCCESS  | m3u8tools:merge_ts_files_ffmpeg_unit:179 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\test\tem_merge\temp_merge_dir\367b0773-2d7e-4292-b3b8-03bbb635f717.ts 成功
 2024-04-06 15:50:08.783 | SUCCESS  | m3u8tools:merge_mp4_files_ffmpeg:234 - 合并视频文件成功, 输出文件: d:\3DS\test\hanime_archivce\m3u8tools\test\test.mp4
+2024-04-06 16:14:05.687 | SUCCESS  | __main__:read_cache_links:65 - 读取缓存成功
+2024-04-06 16:14:05.689 | SUCCESS  | __main__:read_cache_links:66 - 分类: 裏番, 缓存链接数量: 2605
+2024-04-06 16:14:05.691 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.691 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.695 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.702 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.703 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.704 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:05.705 | INFO     | sqlite_cache_decorator:wrapper:140 - Cache miss for get_source
+2024-04-06 16:14:06.941 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=23025
+2024-04-06 16:14:06.950 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:06.985 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=25143
+2024-04-06 16:14:06.992 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:06.995 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=13425
+2024-04-06 16:14:06.996 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=22120
+2024-04-06 16:14:07.004 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.011 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.013 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=22431
+2024-04-06 16:14:07.015 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=37768
+2024-04-06 16:14:07.017 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=12461
+2024-04-06 16:14:07.024 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.032 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.037 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.039 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=39726
+2024-04-06 16:14:07.042 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=22099
+2024-04-06 16:14:07.048 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.053 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.100 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=25218
+2024-04-06 16:14:07.106 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.127 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=23443
+2024-04-06 16:14:07.133 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.135 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=24972
+2024-04-06 16:14:07.143 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.145 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=23235
+2024-04-06 16:14:07.151 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.166 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=37830
+2024-04-06 16:14:07.173 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.175 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=13469
+2024-04-06 16:14:07.181 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.185 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=24934
+2024-04-06 16:14:07.191 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.208 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=12637
+2024-04-06 16:14:07.216 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.559 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=38088
+2024-04-06 16:14:07.570 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.572 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=25147
+2024-04-06 16:14:07.577 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:07.978 | SUCCESS  | cellfunctions:get_source:33 - Fetched source from https://hanime1.me/watch?v=22840
+2024-04-06 16:14:07.987 | INFO     | sqlite_cache_decorator:wrapper:159 - Cache updated for get_source
+2024-04-06 16:14:08.810 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.821 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.825 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.828 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.842 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': 'ねぇ、…しよ後編[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/12637-720p.mp4?secure=bxEia0qIKolAN1ljabgVbA==,1712433666', 'description': '唔...來嘛2唔...來嘛/ねぇ、…しよ後編[中文字幕]自私，安靜的女孩。早春了，Kyouya向Keiko表示了他的愛意。他們接吻並發生性關係，但Kyouya在得知自己不是處女之後，卻因嫉妒而掙扎。Kyouya要求她做出不合理的事情，例如在男洗手間給他口交，在體育課中做愛。庫房，但她按照他的要求去做。Kyouya認為Keiko瘋狂地愛上了他，但他很快就發現自己對她的感情同樣強烈。勃勃，敏感的補充課。Kazu和Chie的關係似乎只是老師和學生的關係，但他們實際上是戀人！有一天，他們兩個人獨自進行了一些額外的學術審查。當Chie不情願地學習時，Kazu過來並開始揉她的乳頭。他發現她用創可貼蓋住了他們，這使他更加興奮。不用說，Chie的學習工作還很多。她取而代之的是逗逗Kazu，轉過桌子，兩個人很快就忙著最好不要在學校做的活動。', 'uploadDate': '2019-07-02T01:31:12+00:00'}
+2024-04-06 16:14:08.849 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.852 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.854 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '清楚で真面目な彼女が、最凶ヤリサーに勧誘されたら…？THEANIMATION[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/13469-sc-720p.mp4?secure=x8wefvxj849MMXOvNCI7nQ==,1712433666', 'description': '清純而認真的她、被誘騙進了最惡劣的色情團伙...？1改編自Frill的遊戲。', 'uploadDate': '2019-12-18T01:29:07+00:00'}
+2024-04-06 16:14:08.860 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.861 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': 'マスターピースTHEANIMATION第2巻[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/12461-sc-720p.mp4?secure=wZgVJls6SEu1_P5Kv2inzA==,1712433666', 'description': 'Masterpiece2尤娜和妮娜決定舉行一場比賽以贏得她們弟弟的心。誰可以經營最好的咖啡館並將他引誘到他們身邊？不幸的是，真正的競爭始於他們的母親決定最終採取行動時。他會選擇誰？他甚至可以選擇嗎？', 'uploadDate': '2019-05-03T01:31:56+00:00'}
+2024-04-06 16:14:08.862 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.864 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '身体で解決百鬼屋探偵事務所～百鬼屋光の妖怪事件簿～第四話妖怪大戦争復讐劇[中文字幕]', 'contentUrl': 'https://vdownload-37.sb-cd.com/1/0/10557744-1080p.mp4?secure=1zTCtqOEumT62qeFRqCL6Q,1712430663&m=37&d=4&_tid=10557744', 'description': '用身體來解決的百鬼屋偵探事務所～百鬼屋光之妖怪事件簿～4某個普通的鄉下都市，有一家名為百鬼屋的偵探事務所，不過那個事務所的百鬼屋偵探光有著妖怪的力量，以妖怪的力量來制裁作惡的妖怪…', 'uploadDate': '2021-11-28T11:08:00+00:00'}
+2024-04-06 16:14:08.868 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.871 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.879 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '人妻コスプレ喫茶2～人妻ラブラブ・コスプレOVA～Menu.1「恥ずかしいけど着てあげる♪」[中文字幕]', 'contentUrl': 'https://vdownload-1.hembed.com/25218-720p.mp4?token=G_HxFghACt8vmIGbhlNs_A&expires=1712434445', 'description': '人妻角色扮演咖啡廳2第1話人妻コスプレ喫茶2～人妻ラブラブ・コスプレOVA～／Menu.1「恥ずかしいけど着てあげる♪」', 'uploadDate': '2007-08-24T12:00:00+00:00'}
+2024-04-06 16:14:08.880 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.883 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.885 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.886 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '擬態催眠前編[中文字幕]', 'contentUrl': 'https://abre-videos.cdn1122.com/_hls/videos/7/6/4/4/4/764440a0939cf685955fc751a40649381636391401-1920-1080-4138-h264.mp4/master.m3u8?validfrom=1712304620&validto=1712477420&rate=794496&hdl=-1&hash=dsgyiUta7XXZ1m4qaZiTbSWv2kM%3D', 'description': '擬態催眠1擬態催眠前編', 'uploadDate': '2011-01-13T02:50:23+00:00'}
+2024-04-06 16:14:08.890 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.893 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.894 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.899 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '堕落女教師破壊（上巻）[中文字幕]', 'contentUrl': 'https://abre-videos.cdn1122.com/_hls/videos/f/1/6/4/2/f16427b0575bf941345e762c6d8683d31636293605-1440-1080-1240-h264.mp4/master.m3u8?validfrom=1712296220&validto=1712469020&rate=238080&hdl=-1&hash=PS29aFdZYJjJy5W2iexBL8%2F31RU%3D', 'description': '墮落女老師破壞1堕落女教師破壊（上巻）', 'uploadDate': '2002-09-18T06:17:10+00:00'}
+2024-04-06 16:14:08.904 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.906 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.913 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '妹ぱらだいす！3TheAnimation上巻[中文字幕]', 'contentUrl': 'https://vdownload-13.sb-cd.com/9/8/9882131-720p.mp4?secure=cQd15SRHKMaElux7LvLxiw,1712428703&m=13&d=6&_tid=9882131', 'description': '妹天堂！3第1話妹ぱらだいす！3TheAnimation上巻', 'uploadDate': '2018-04-26T03:09:59+00:00'}
+2024-04-06 16:14:08.919 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.919 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '鋼鉄の魔女アンネローゼ02窮地の魔女：Witchlose[中文字幕]', 'contentUrl': 'https://vdownload-22.sb-cd.com/7/2/7266487-1080p.mp4?secure=MQ4TR7v810fO34yX2HaBNA,1712427364&m=22&d=2&_tid=7266487', 'description': '鋼鐵的魔女安妮洛茲2大受歡迎的作品「鋼鐵魔女」竟然成功的動畫化！由笹山逸刀斎親手打造的系列作品加上海道司導演的功力下魔界都市劍客暴辱動畫會有怎樣的面貌呈現呢！？精彩的第二話更是絕對不容錯過！！', 'uploadDate': '2013-05-24T02:32:53+00:00'}
+2024-04-06 16:14:08.923 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.926 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.929 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': 'ピスはめ！4[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/22120-sc-1080p.mp4?secure=sKe_7FzBYD9NnJmAag34tQ==,1712433666', 'description': '開心狂幹！4普通的女學生，沒想到竟然對性這麼的開放！！在校園生活最後的回憶，究竟是怎樣的一頁呢？！人氣實力作家‧師走之翁OVA第四彈！讓你體驗在漫畫中無法感受到的世界觀！', 'uploadDate': '2012-10-18T03:57:52+00:00'}
+2024-04-06 16:14:08.932 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '少女教育RE第1話稲垣紗衣と過ごす日々[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/22099-sc-1080p.mp4?secure=ZbfUkQ0XgztnvyT6FDG6Sw==,1712433666', 'description': '少女教育RE1稻垣彩衣是一位榮譽學生，他的外表和態度都很酷，可以學習和玩體育。但是，由於他很害羞並且不擅長說話，因此他對班級不熟悉，常常獨自一人在教室裡。白石陽一，對她很友善的班主任。賽愛上了那個人。有一天，她敢向白石陽一透露自己的想法。他大膽地將嘴唇放在白石的嘴唇上。想要為Shiroishi做任何事情的Sai接受他想要的。', 'uploadDate': '2019-07-05T12:00:00+00:00'}
+2024-04-06 16:14:08.934 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.936 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.939 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.943 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.946 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.964 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '黒姫-桎梏の館-後編[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/23025-sc-720p.mp4?secure=JaIuSZQYtqjtarVHX5njkg==,1712433666', 'description': '黑姬-桎梏之館-2黒姫-桎梏の館-後編', 'uploadDate': '2003-03-28T01:00:30+00:00'}
+2024-04-06 16:14:08.969 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.972 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.979 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '僕だけのヘンタイカノジョTHEANIMATION[中文字幕]', 'contentUrl': 'https://vdownload-27.sb-cd.com/8/6/8642984-1080p.mp4?secure=Hqka2rT_CH5IM673hM_u6A,1712428791&m=27&d=6&_tid=8642984', 'description': '只屬於我的變態女友1有一所著名的全女子學校，去那兒的女孩之一是瀧川雛。我知道她的秘密已有半年了。我不能告訴任何人，除了我，沒人知道。她甚至不知道我知道這件事。但即使我也不知道她的所有秘密...', 'uploadDate': '2021-03-24T12:03:29+00:00'}
+2024-04-06 16:14:08.984 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.986 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:08.991 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '未亡人-第2章-淫辱の遺産[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/25147-sc-720p.mp4?secure=kYRNy-0UhAzlskT0i6mFYg==,1712433666', 'description': '未亡人～淫辱的遺產～2未亡人-第2章-淫辱の遺産', 'uploadDate': '2004-10-24T11:58:56+00:00'}
+2024-04-06 16:14:08.996 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:08.999 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:09.001 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '透明人間R後編[中文字幕]', 'contentUrl': 'https://abre-videos.cdn1122.com/_hls/videos/0/3/c/0/e/03c0e1dee4842a224459a00573412c4e1636216802-1920-1080-1571-h264.mp4/master.m3u8?validfrom=1712296099&validto=1712468899&rate=301632&hdl=-1&hash=17Nlpwf039PYKIzVY%2BKk1%2BB7WKQ%3D', 'description': '透明人間R後編透明人間R後編', 'uploadDate': '2010-06-11T01:44:13+00:00'}
+2024-04-06 16:14:09.007 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:09.010 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:09.012 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '同窓会again～小早川瑞穂編～[中文字幕]', 'contentUrl': 'https://abre-videos.cdn1122.com/_hls/videos/8/2/a/c/e/82ace7128228e63794b76e88c4d7c1c21636386122-1440-1080-3839-h264.mp4/master.m3u8?validfrom=1712299040&validto=1712471840&rate=737088&hdl=-1&hash=hGTevNp5v%2Bl2uELgHgMgiJIREvw%3D', 'description': '同窗會again1同窓会again～小早川瑞穂編～', 'uploadDate': '2002-07-24T12:42:43+00:00'}
+2024-04-06 16:14:09.018 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:09.020 | INFO     | sqlite_cache_decorator:wrapper:273 - Cache miss for parse
+2024-04-06 16:14:09.024 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': 'メイド教育。-没落貴族瑠璃川椿-THEANIMATION[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/39726-sc-1080p.mp4?secure=TvCknYHR-2svekGxTAQPig==,1712433666', 'description': '女僕教育。名門貴族「瑠璃川」家已經沒落了。這個絕世美少女椿被大貴族「波伊曼」卿收養，開始了新的人生。然而，她只能當他的”女僕”。即使在不能反抗的情況下，椿仍然堅強地保持著貴族的尊嚴。但是，在主人變態的女僕教育中，她心靈和身體都受到了嚴重摧殘、污染和無情地刻上不想要的高潮。為了成為一個合格的”女僕”，没落貴族琉璃川椿將墮落到更深處…[粉紅波蘿]女僕教育没落貴族瑠璃川椿THEANIMATION/[粉红波萝]女仆教育没落贵族瑠璃川椿THEANIMATION', 'uploadDate': '2023-05-26T03:20:06+00:00'}
+2024-04-06 16:14:09.031 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:09.046 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '鬼作第二発「美人ナースはお見合いで追い込め！」[中文字幕]', 'contentUrl': 'https://vdownload.hembed.com/24972-sc-720p.mp4?secure=KGmPvRalUigKkvLv2KmOVw==,1712433666', 'description': '鬼作2鬼作第二発「美人ナースはお見合いで追い込め！」', 'uploadDate': '2002-03-22T04:41:11+00:00'}
+2024-04-06 16:14:09.048 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': '御神楽探偵団第三幕[中文字幕]', 'contentUrl': 'https://vdownload-1.hembed.com/37830-720p.mp4?token=4piLwZ1JV1ske8ztzXXjHw&expires=1712434445', 'description': '御神樂偵探團3全裸で串刺しにされた千津江の死体が発見された。事件の背後に常盤省吾がいると睨んだ探偵事務所の面々は、早速聞き込みを開始するが、その事件が解決する前にあかねが、同じように串刺しの遺体となってみつかった。巴らは囮捜査を開始するが、その中で千鶴が何者かに誘拐され、犯●れてしまう…。', 'uploadDate': '2004-09-23T01:12:19+00:00'}
+2024-04-06 16:14:09.051 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:09.054 | SUCCESS  | cellfunctions:parse:101 - Parsed JSON data: {'name': 'OVA茜ハ摘マレ染メラレル＃1[中文字幕]', 'contentUrl': 'https://vdownload-47.sb-cd.com/1/2/12746996-1080p.mp4?secure=6_2RvySnNskCAS0SSkq5AQ,1712432643&m=47&d=1&_tid=12746996', 'description': '被采摘污染的茜1續「OVA紫陽花の散ル頃に」和「OVA向日葵ハ夜ニ咲ク」之後，『真珠貝』的新作品也動畫化了，這部的劇情主要是講棒球部經理【七尾茜】和王牌球員【片瀬翔也】秘密戀愛的事情被教練【東剛】發現了，因為棒球部內部是嚴禁戀愛的，【七尾茜】為了保護【片瀬翔也】不被開除出棒球部，不的不接受【東剛】提出的要求', 'uploadDate': '2022-02-07T04:07:35+00:00'}
+2024-04-06 16:14:09.059 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:09.064 | INFO     | sqlite_cache_decorator:wrapper:294 - Cache updated for parse
+2024-04-06 16:14:09.217 | SUCCESS  | m3u8tools.download_m3u8_file:get_base_link:88 - 基础链接获取完成
+2024-04-06 16:14:09.218 | SUCCESS  | m3u8tools.download_m3u8_file:__init__:62 - 初始化m3u8下载类完成
+2024-04-06 16:14:10.504 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:12.383 | SUCCESS  | m3u8tools.download_m3u8_file:get_seg_link_list:203 - 所有分片链接获取完成
+2024-04-06 16:14:13.575 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:13.583 | SUCCESS  | m3u8tools.download_m3u8_file:get_resolutions:134 - 分辨率获取完成,分辨率为:['1920', 'x', '1080']
+2024-04-06 16:14:14.800 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:14.803 | SUCCESS  | m3u8tools.download_m3u8_file:get_frame_rate:160 - 帧率获取完成,帧率为:29.970
+2024-04-06 16:14:14.804 | INFO     | m3u8tools.download_m3u8_file:run:429 - ts链接数量: 464
+2024-04-06 16:14:14.806 | SUCCESS  | m3u8tools.download_m3u8_file:get_base_link:88 - 基础链接获取完成
+2024-04-06 16:14:14.807 | SUCCESS  | m3u8tools.download_m3u8_file:__init__:62 - 初始化m3u8下载类完成
+2024-04-06 16:14:16.106 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:17.837 | SUCCESS  | m3u8tools.download_m3u8_file:get_seg_link_list:203 - 所有分片链接获取完成
+2024-04-06 16:14:25.150 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:25.152 | SUCCESS  | m3u8tools.download_m3u8_file:get_resolutions:134 - 分辨率获取完成,分辨率为:['1440', 'x', '1080']
+2024-04-06 16:14:26.331 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:26.333 | SUCCESS  | m3u8tools.download_m3u8_file:get_frame_rate:160 - 帧率获取完成,帧率为:29.970
+2024-04-06 16:14:26.333 | INFO     | m3u8tools.download_m3u8_file:run:429 - ts链接数量: 382
+2024-04-06 16:14:26.335 | SUCCESS  | m3u8tools.download_m3u8_file:get_base_link:88 - 基础链接获取完成
+2024-04-06 16:14:26.336 | SUCCESS  | m3u8tools.download_m3u8_file:__init__:62 - 初始化m3u8下载类完成
+2024-04-06 16:14:27.569 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:29.235 | SUCCESS  | m3u8tools.download_m3u8_file:get_seg_link_list:203 - 所有分片链接获取完成
+2024-04-06 16:14:30.718 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:30.720 | SUCCESS  | m3u8tools.download_m3u8_file:get_resolutions:134 - 分辨率获取完成,分辨率为:['1920', 'x', '1080']
+2024-04-06 16:14:31.931 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:31.933 | SUCCESS  | m3u8tools.download_m3u8_file:get_frame_rate:160 - 帧率获取完成,帧率为:29.970
+2024-04-06 16:14:31.933 | INFO     | m3u8tools.download_m3u8_file:run:429 - ts链接数量: 417
+2024-04-06 16:14:31.936 | SUCCESS  | m3u8tools.download_m3u8_file:get_base_link:88 - 基础链接获取完成
+2024-04-06 16:14:31.939 | SUCCESS  | m3u8tools.download_m3u8_file:__init__:62 - 初始化m3u8下载类完成
+2024-04-06 16:14:33.152 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:35.098 | SUCCESS  | m3u8tools.download_m3u8_file:get_seg_link_list:203 - 所有分片链接获取完成
+2024-04-06 16:14:36.305 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:36.307 | SUCCESS  | m3u8tools.download_m3u8_file:get_resolutions:134 - 分辨率获取完成,分辨率为:['1440', 'x', '1080']
+2024-04-06 16:14:37.511 | SUCCESS  | m3u8tools.download_m3u8_file:get_index:114 - 索引链接获取完成
+2024-04-06 16:14:37.513 | SUCCESS  | m3u8tools.download_m3u8_file:get_frame_rate:160 - 帧率获取完成,帧率为:29.970
+2024-04-06 16:14:37.513 | INFO     | m3u8tools.download_m3u8_file:run:429 - ts链接数量: 424

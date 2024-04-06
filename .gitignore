@@ -11,3 +11,4 @@
 /__pycache__
 /proxy_pool/.pytest_cache
 /proxy_pool/__pycache__
+m3u8tools/__pycache__/download_m3u8_file.cpython-312.pyc
