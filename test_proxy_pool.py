@@ -11,16 +11,16 @@ proxy_pool = ProxyPool()
 
 async def fetch(url):
     try:
-        proxy = next(iter(proxy_pool.next_proxies().values()))
+        proxy = next(iter(proxy_pool.next_proxies().values()), None)
         async with aiohttp.ClientSession() as session:
 
             print(f"Using proxy: {proxy}")
             async with session.get(url, proxy=proxy, timeout=10) as response:
                 html = await response.text()
                 print(html)
-                asyncio.sleep(2)
+                await asyncio.sleep(2)
     except:
-        print(f"Error:{proxy}")
+        print(f"Error:{proxy}")  # type: ignore
 
 
 async def main():
