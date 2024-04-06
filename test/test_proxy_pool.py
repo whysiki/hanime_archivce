@@ -9,6 +9,7 @@ from rich import print
 proxy_pool = ProxyPool()
 
 
+# 测试代理池
 async def fetch(url):
     try:
         proxy = next(iter(proxy_pool.next_proxies().values()), None)
