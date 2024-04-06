@@ -1172,3 +1172,9 @@
 2024-04-06 15:40:57.777 | SUCCESS  | m3u8tools.download_m3u8_file:merge_mp4_files:385 - 合并完成
 2024-04-06 15:40:57.778 | INFO     | m3u8tools.download_m3u8_file:run:440 - 未清空缓存d:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\0926dc0889cb9824bea5fdd63bebbcea
 2024-04-06 15:40:57.778 | SUCCESS  | cellfunctions:download_m3u8:354 - {'status_code': 200, 'url': 'https://abre-videos.cdn1122.com/_hls/videos/a/e/d/1/c/aed1c468900a065a4c2149ac4ebe76371634067843-1440-1080-1131-h264.mp4/master.m3u8?validfrom=1712255163&validto=1712427963&rate=217152&hdl=-1&hash=ugYpGXoMaeLtGUEKd6X6IfioHF4%3D', 'filename': 'D:\\3DS\\test\\hanime_archivce\\test.mp4', 'download_status': True, 'size': '232.72MB', 'm3u8': True}
+2024-04-06 15:45:32.116 | SUCCESS  | m3u8tools:merge_ts_files_ffmpeg_unit:179 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\test\tem_merge\temp_merge_dir\1d2d58c6-d060-4e62-b516-25b00cc36d44.ts 成功
+2024-04-06 15:45:32.232 | SUCCESS  | m3u8tools:merge_mp4_files_ffmpeg:234 - 合并视频文件成功, 输出文件: d:\3DS\test\hanime_archivce\m3u8tools\test\test.mp4
+2024-04-06 15:48:44.834 | SUCCESS  | m3u8tools:merge_ts_files_ffmpeg_unit:179 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\test\tem_merge\temp_merge_dir\2ab8fb91-7b8d-48f5-9865-c44db1abf52e.ts 成功
+2024-04-06 15:48:44.973 | SUCCESS  | m3u8tools:merge_mp4_files_ffmpeg:234 - 合并视频文件成功, 输出文件: d:\3DS\test\hanime_archivce\m3u8tools\test\test.mp4
+2024-04-06 15:50:08.675 | SUCCESS  | m3u8tools:merge_ts_files_ffmpeg_unit:179 - 合并到 d:\3DS\test\hanime_archivce\m3u8tools\test\tem_merge\temp_merge_dir\367b0773-2d7e-4292-b3b8-03bbb635f717.ts 成功
+2024-04-06 15:50:08.783 | SUCCESS  | m3u8tools:merge_mp4_files_ffmpeg:234 - 合并视频文件成功, 输出文件: d:\3DS\test\hanime_archivce\m3u8tools\test\test.mp4
