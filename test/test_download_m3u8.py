@@ -19,3 +19,9 @@ class TestMergeFiles(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+# ffmpeg -i "https://abre-videos.cdn1122.com/_hls/videos/a/e/d/1/c/aed1c468900a065a4c2149ac4ebe76371634067843-1440-1080-1131-h264.mp4/master.m3u8?validfrom=1712255163&validto=1712427963&rate=217152&hdl=-1&hash=ugYpGXoMaeLtGUEKd6X6IfioHF4%3D" -c copy -bsf:a aac_adtstoasc output.mp4
+
+
+# ffmpeg -i "https://abre-videos.cdn1122.com/_hls/videos/a/e/d/1/c/aed1c468900a065a4c2149ac4ebe76371634067843-1440-1080-1131-h264.mp4/master.m3u8?validfrom=1712255163&validto=1712427963&rate=217152&hdl=-1&hash=ugYpGXoMaeLtGUEKd6X6IfioHF4%3D" -c copy -bsf:a aac_adtstoasc output.mp4
