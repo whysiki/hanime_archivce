@@ -50,9 +50,9 @@ TO_DOWNLOAD_M3U8 = True  # 是否下载m3u8视频,默认不下载,因为可能�
 To_DOWNLOAD_MP4 = False  # 是否下载mp4视频
 SAVE_PATH = "videos"  # 下载视频保存路径
 SOURCE_CACHE_DIR = "cache/source/sql/source_cache.db"  # 源码缓存目录
-BATCH_SIZE = 20  # 分批合成
+BATCH_SIZE = 10  # 分批合成
 PARSE_CACHE_DIR = "cache/parse/sql/parse_cache.db"  # 解析缓存目录
-TO_CLEAR_CACHE = True  # 是否清理m3u8缓存
+TO_CLEAR_CACHE = False  # 是否清理m3u8缓存
 MERGE_TS_PROCESSES = math.floor(
     multiprocessing.cpu_count() / 3
 )  # 合并ts进程数 和解析进程数

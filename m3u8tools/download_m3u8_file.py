@@ -1,8 +1,5 @@
 from m3u8tools.__init__ import *
 
-# from proxy_pool import ProxyPool
-
-#
 # # Configuration file
 from config import (
     TS_RETRIES,
@@ -262,10 +259,6 @@ class M3u8_download:
 
             seg_path = os.path.join(self.temp_dowload_directory, f"seg{seg_index}.ts")
 
-            if len(self.seg_link_list) == self.count_ts_mp4_files()[1]:
-                # logger.warning("已下载所有分片")
-                return seg_index, seg_url, seg_path  # 返回三元组 , 用于后续转换
-
             # 初始化下载大小
             downloaded_size = 0
             if (
@@ -327,7 +320,15 @@ class M3u8_download:
 
                 assert file_exist_size == total_size, "下载文件大小不一致"
 
-                logger.success(f"下载分片{seg_index}.ts完成,大小:{file_exist_size}")
+                if file_exist_size > 200:
+
+                    logger.success(
+                        f"下载分片{seg_index}.ts完成,大小:{file_exist_size}, link: {seg_url}"
+                    )
+                else:
+                    logger.warning(
+                        f"下载分片{seg_index}.ts完成,大小:{file_exist_size}, link: {seg_url}"
+                    )
 
                 return seg_index, seg_url, seg_path  # 返回三元组 , 用于后续转换
 
@@ -344,7 +345,7 @@ class M3u8_download:
 
             seg_index_url_path_list: list[tuple[int, str, str]] = await asyncio.gather(
                 *tasks
-            )  # type: ignore
+            )
 
             seg_index_url_path_list_remove_none = [
                 i for i in seg_index_url_path_list if i
@@ -375,6 +376,10 @@ class M3u8_download:
         logger.debug(f"开始合并, 输出路径:{self.out_path},数量:{len(ts_files)}")
 
         command_list = self.get_command_lsit()
+
+        logger.debug(f"合并参数:{self.command_list}")
+
+        logger.debug(f"合并文件列表:{ts_files}")
 
         issuccess = merge_mp4_files_ffmpeg(
             input_files=ts_files,

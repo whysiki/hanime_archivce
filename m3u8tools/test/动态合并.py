@@ -4,10 +4,12 @@ import os
 import shutil
 import asyncio
 
+
 current = os.path.dirname(__file__)
+out_file = os.path.join(current, "test.mp4")
+ensure_file_exists(out_file)
 
-
-test_data = r"D:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\58ebfc77c2688becd77d5ec1788cf264"
+test_data = r"D:\3DS\test\hanime_archivce\m3u8tools\temp_ts_cache\0926dc0889cb9824bea5fdd63bebbcea"
 
 list_dir = [
     # os.path.join(test_data, i)
@@ -15,7 +17,6 @@ list_dir = [
     for i in os.listdir(test_data)
     if os.path.splitext(i)[-1] == ".ts"
 ]
-
 
 tempdir = os.path.join(current, "tem_ts")
 
@@ -33,9 +34,6 @@ for i in list_dir:
     input_files.append(out)
 
 
-out_file = os.path.join(current, "test.mp4")
-ensure_file_exists(out_file)
-
 if __name__ == "__main__":
 
     a = merge_mp4_files_ffmpeg(
@@ -43,17 +41,16 @@ if __name__ == "__main__":
         input_files=input_files,
         output_file=out_file,
         max_processes=2,
-        batch_size=10,
+        batch_size=30,
         # overwrite=True,
     )
 
     assert a
 
-    os.remove(out_file)
-
-    shutil.rmtree(tempdir, ignore_errors=True)
-    shutil.rmtree(os.path.join(current, "tem_merge"), ignore_errors=True)
-    shutil.rmtree(os.path.join(current, "test_download"), ignore_errors=True)
+    # os.remove(out_file)
+    # shutil.rmtree(tempdir, ignore_errors=True)
+    # shutil.rmtree(os.path.join(current, "tem_merge"), ignore_errors=True)
+    # shutil.rmtree(os.path.join(current, "test_download"), ignore_errors=True)
 
     # asyncio.run(
     #     seg_to_mp4_async(

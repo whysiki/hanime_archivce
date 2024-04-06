@@ -198,5 +198,20 @@ if __name__ == "__main__":
     if 1:
 
         get_video = GetVideo(save_path=SAVE_PATH, gengre="裏番")
-        asyncio.run(get_video.process_links(number=2))
+
+        # get_video.links_set = {
+        #     r"https://abre-videos.cdn1122.com/_hls/videos/a/e/d/1/c/aed1c468900a065a4c2149ac4ebe76371634067843-1440-1080-1131-h264.mp4/master.m3u8?validfrom=1712255163&validto=1712427963&rate=217152&hdl=-1&hash=ugYpGXoMaeLtGUEKd6X6IfioHF4%3D"
+        # }
+
+        # asyncio.run(get_video.process_links(number=1))
+
+        test_m3u8_params = [
+            dict(
+                url=r"https://abre-videos.cdn1122.com/_hls/videos/a/e/d/1/c/aed1c468900a065a4c2149ac4ebe76371634067843-1440-1080-1131-h264.mp4/master.m3u8?validfrom=1712255163&validto=1712427963&rate=217152&hdl=-1&hash=ugYpGXoMaeLtGUEKd6X6IfioHF4%3D",
+                filename=r"test.mp4",
+            )
+        ]
+
+        asyncio.run(get_video.download_m3u8_videos(test_m3u8_params))
+
     # print("下载完成")

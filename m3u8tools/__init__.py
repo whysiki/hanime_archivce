@@ -130,10 +130,17 @@ def merge_ts_files_ffmpeg_unit(
         suffix=".txt",
     ) as temp_file:
         # 写入文件路径到临时文件中
-        for input_file in input_files:
-            temp_file.write(f"file '{input_file}'\n".encode())
+        input_files.sort(key=lambda x: int(x.split("seg")[1].split(".")[0]))
 
-        # 构建 FFmpeg 命令来合并 TS 文件
+        for order, input_file in enumerate(input_files):
+            if order == len(input_files) - 1:
+                temp_file.write(f"file '{input_file}'".encode())
+            else:
+                temp_file.write(f"file '{input_file}'\n".encode())
+
+        # 刷新缓冲区
+        temp_file.flush()
+
         ffmpeg_command = [
             # "ffmpeg",
             ffmpeg_exe_path,
@@ -152,18 +159,15 @@ def merge_ts_files_ffmpeg_unit(
 
     if overwrite:
 
-        ffmpeg_command.insert(1, "-y")  # 覆盖已存在的输出文件
+        ffmpeg_command.insert(1, "-y")
 
     if command_list and len(command_list) > 1:
         ffmpeg_command.extend(command_list)
 
-    # 执行 FFmpeg 命令，并捕获可能的异常
     try:
-        # print(ffmpeg_command)
         subprocess.run(ffmpeg_command, check=True)
 
     except Exception as e:
-        # raise e
         error_msg = str(e)
         error_type = type(e).__name__
         logger.error(f"合并 to {output_file} 失败：{error_type} {error_msg}")
@@ -174,10 +178,6 @@ def merge_ts_files_ffmpeg_unit(
     else:
         logger.success(f"合并到 {output_file} 成功")
         return True, output_file
-
-    # finally:
-    #     logger.info(f"删除临时文件 {temp_file.name}")
-    #     os.remove(temp_file.name)
 
 
 def merge_files(input_files: list[str], temp_dir: str, command_list: list[str]):
@@ -212,65 +212,16 @@ def merge_mp4_files_ffmpeg(
     input_files: list[str],
     output_file: str,
     temp_dir: str = "temp_merge_mp4_cache",
-    batch_size: int = 20,
-    max_processes=max(1, math.floor(multiprocessing.cpu_count() / 5)),
     command_list: list = [],
-) -> bool:  # type: ignore
+) -> bool:
 
     try:
-        # if 1:
 
         for file in input_files:
             if not os.path.exists(file):
                 raise FileNotFoundError(f"文件 {file} 不存在")
 
-        #
-        # 动态合并算法
-
-        temp_input_files = input_files.copy()
-
-        while len(temp_input_files) > 1:
-
-            temp_output_files = []
-
-            temp_index = 0
-
-            with concurrent.futures.ProcessPoolExecutor(
-                max_workers=max_processes
-            ) as executor:
-
-                futures = []
-
-                while temp_index < len(temp_input_files):
-
-                    temp_index += 1
-
-                    futures.append(
-                        executor.submit(
-                            merge_files,
-                            temp_input_files[
-                                temp_index : min(
-                                    temp_index + batch_size, len(temp_input_files) - 1
-                                )
-                            ],
-                            temp_dir,
-                            command_list,
-                        )
-                    )
-                    temp_index += batch_size
-
-                for future in tqdm.tqdm(
-                    concurrent.futures.as_completed(futures),  # type: ignore
-                    total=len(futures),
-                    desc="合并分片..",
-                    unit="file",
-                    smoothing=0.5,
-                ):
-                    result = future.result()
-                    if result:
-                        temp_output_files.append(result)
-
-            temp_input_files = temp_output_files
+        temp_input_files = [merge_files(input_files, temp_dir, command_list)]
 
         assert len(temp_input_files) == 1, "最终合成文件列表数量不为1"
 
@@ -283,8 +234,6 @@ def merge_mp4_files_ffmpeg(
         return True
 
     except Exception as e:
-
-        # raise e
 
         error_type = type(e).__name__
         logger.error(
