@@ -1,13 +1,5 @@
 from m3u8tools.__init__ import *
 
-# # Configuration file
-from config import (
-    TS_RETRIES,
-    TIME_OUT,
-    TS_SEMAPHORE_SIZE,
-    PROXIES_POOL,
-)
-
 
 class M3u8_download:
 
@@ -101,6 +93,8 @@ class M3u8_download:
 
         self.initial_text = text
 
+        logger.success("master m3u8文件获取完成")
+
         pattern = r"(index-.*?m3u8.*?\n)"
 
         match = re.findall(pattern=pattern, string=text)
@@ -186,17 +180,11 @@ class M3u8_download:
 
         text = response.text
 
-        # 定义正则表达式模式
-        # pattern = r"seg-(\d+-v1)-a1\.ts\?validfrom=\d+&validto=\d+&rate=\d+&hdl=-\d+&hash=[\w%]+"
-
         pattern = r"(seg-)(.*?)(-v1-a1\.ts\?validfrom=\d+&validto=\d+&rate=\d+&hdl=-\d+&hash=[\w%]+)\n"
 
-        # 使用正则表达式匹配所有的ts文件链接
         match = re.findall(pattern=pattern, string=text)
 
-        # print(match.__len__())
         for i in match:
-            # print(i)
             seg_link = self.base_link + i[0] + i[1] + i[2]
             self.seg_link_list.append((int(i[1]), seg_link))
 
@@ -222,9 +210,7 @@ class M3u8_download:
         self, seg_url: str, seg_index: int, proxies_download_seg: dict[str, str] = {}
     ) -> tuple[int, str, str]:
 
-        timeoutaio = aiohttp.ClientTimeout(total=self.TS_DOWNLOAD_TIMEOUT)
-
-        # 配置TCPConnector连接
+        timeout_aio = aiohttp.ClientTimeout(total=self.TS_DOWNLOAD_TIMEOUT)
 
         connector = aiohttp.TCPConnector(
             verify_ssl=False,
@@ -246,7 +232,7 @@ class M3u8_download:
         )
 
         async with aiohttp.ClientSession(
-            timeout=timeoutaio, connector=connector  # type: ignore
+            timeout=timeout_aio, connector=connector  # type: ignore
         ) as session:
 
             seg_path = os.path.join(self.temp_dowload_directory, f"seg{seg_index}.ts")
@@ -369,10 +355,6 @@ class M3u8_download:
 
         command_list = self.get_command_lsit()
 
-        # logger.debug(f"合并参数:{self.command_list}")
-
-        # logger.debug(f"合并文件列表:{ts_files}")
-
         issuccess = merge_mp4_files_ffmpeg(
             input_files=ts_files,
             output_file=self.out_path,
@@ -385,22 +367,6 @@ class M3u8_download:
         logger.success("合并完成")
 
         return self.out_path
-
-    def info(self) -> None:
-
-        # 打印属性相关信息
-        print(f"base_link: {self.base_link}")
-        print(f"index_link: {self.index_link}")
-        print(f"temp_dowload_directory: {self.temp_dowload_directory}")
-        print(f"seg_link_list: {self.seg_link_list}")
-
-        print(f"resolutions: {self.resolutions}")
-
-        print(f"frame_rate: {self.frame_rate}")
-
-        print(f"initial_text: {self.initial_text}")
-
-        print(f"command_list: {self.command_list}")
 
     def count_ts_mp4_files(self) -> tuple[bool, int, int]:
 
@@ -419,6 +385,26 @@ class M3u8_download:
         shutil.rmtree(self.temp_dowload_directory)  # type: ignore
 
         logger.success(f"清空缓存文件夹:{self.temp_dowload_directory}")
+
+    @property  # 展示所有参数
+    def parmas(self):
+        return {
+            "m3u8_link": self.m3u8_link,
+            "proxies": self.proxies,
+            "out_path": self.out_path,
+            "headers": self.headers,
+            "base_link": self.base_link,
+            "temp_dowload_directory": self.temp_dowload_directory,
+            "initial_text": self.initial_text,
+            "index_link": self.index_link,
+            "seg_link_list": self.seg_link_list,
+            "seg_index_url_path_list": self.seg_index_url_path_list,
+            "result_dict": self.result_dict,
+            "resolutions": self.resolutions,
+            # "codecs": self.codecs,
+            "frame_rate": self.frame_rate,
+            "command_list": self.command_list,
+        }
 
     async def run(self, to_clear_cache: bool = True):
 

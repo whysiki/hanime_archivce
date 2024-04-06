@@ -8,8 +8,12 @@ def source_assert_result(result):
     assert isinstance(result, dict)
     assert "source" in result
 
+    return True
+
 
 def parse_assert_result(result):
     assert result
     assert isinstance(result, dict)
     assert ("name" in result) and ("contentUrl" in result) and ("description" in result)
+
+    return True

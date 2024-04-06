@@ -11,7 +11,7 @@ import aiofiles
 from loguru import logger
 import pickle
 import string
-from typing import Optional, Set, Dict, Callable, Union
+from typing import Optional, Set, Dict, Callable, Union, Tuple
 from pathlib import Path
 from functools import cached_property
 from urllib.parse import urlencode, urljoin
@@ -52,9 +52,7 @@ SAVE_PATH = "videos"  # 下载视频保存路径
 SOURCE_CACHE_DIR = "cache/source/sql/source_cache.db"  # 源码缓存目录
 PARSE_CACHE_DIR = "cache/parse/sql/parse_cache.db"  # 解析缓存目录
 TO_CLEAR_CACHE = False  # 是否清理m3u8缓存
-PERSE_MAX_PROCESSES = math.floor(
-    multiprocessing.cpu_count() / 3
-)  # 合并ts进程数 和解析进程数
+PERSE_MAX_PROCESSES = math.floor(multiprocessing.cpu_count() / 3)  # 解析进程数
 TO_DELETE_FAILED_VIDEOS_IN_LAST_RETRY = False  # 最后一次重试结束后是否删除文件
 
 
