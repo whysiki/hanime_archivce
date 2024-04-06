@@ -47,7 +47,7 @@ AIOHTTP_CONNECTION_LIMIT = 700  # aiohttp最大连接数
 
 # 下载和缓存配置
 TO_DOWNLOAD_M3U8 = True  # 是否下载m3u8视频,默认不下载,因为可能堵塞mp4下载
-To_DOWNLOAD_MP4 = False  # 是否下载mp4视频
+To_DOWNLOAD_MP4 = True  # 是否下载mp4视频
 SAVE_PATH = "videos"  # 下载视频保存路径
 SOURCE_CACHE_DIR = "cache/source/sql/source_cache.db"  # 源码缓存目录
 PARSE_CACHE_DIR = "cache/parse/sql/parse_cache.db"  # 解析缓存目录

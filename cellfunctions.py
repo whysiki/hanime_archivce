@@ -188,9 +188,9 @@ def handle_down_other_error(
     返回:
     dict: 包含错误信息、URL、错误类型和下载状态的字典。
     """
-    logger.error(f"下载失败，文件名：{filename}，URL：{url}")
+    logger.debug(f"下载失败，文件名：{filename}，URL：{url}")
     error_type = type(e).__name__
-    logger.error(f"错误详情：{str(e)}，错误类型：{error_type}")
+    logger.debug(f"错误详情：{str(e)}，错误类型：{error_type}")
 
     return dict(error=str(e), url=url, error_type=error_type, download_status=False)  # type: ignore
 
@@ -281,41 +281,42 @@ async def download_mp4_with_progress(
             headers: dict[str, str] = (
                 {"Range": f"bytes={downloaded_size}-"} if downloaded_size else {}
             )
-            async with session.get(url, proxy=proxy, headers=headers) as response:
-                if response.status not in [200, 206, 416]:
-                    raise ValueError(
-                        f"下载失败，文件名：{filename}，状态码：{response.status}，URL：{url}"
+            async with session:
+                async with session.get(url, proxy=proxy, headers=headers) as response:
+                    if response.status not in [200, 206, 416]:
+                        raise ValueError(
+                            f"下载失败，文件名：{filename}，状态码：{response.status}，URL：{url}"
+                        )
+                    total_size: int = (
+                        int(response.headers.get("content-length", 0)) + downloaded_size
                     )
-                total_size: int = (
-                    int(response.headers.get("content-length", 0)) + downloaded_size
-                )
-                if total_size == 0:
-                    raise ValueError(f"URL {url} 没有内容可以下载")
-                bar = tqdm(
-                    total=total_size, desc=f"{filename}", unit="b", smoothing=0.5
-                )
-                bar.update(downloaded_size)
-                download_mode: str = "wb" if downloaded_size == 0 else "ab"
-                async with aiofiles.open(filename, download_mode) as file:
-                    pices_size: int = 8192
-                    while True:
-                        chunk = await response.content.read(pices_size)
-                        if not chunk:
-                            break
-                        await file.write(chunk)
-                        bar.update(len(chunk))
-                        downloaded_size += len(chunk)
-                bar.close()
-                if (
-                    downloaded_size < total_size
-                    or file_path.stat().st_size < total_size
-                ):
-                    raise ValueError("下载失败")
-                if enable_filter and (
-                    downloaded_size <= filter_size
-                    or file_path.stat().st_size <= filter_size
-                ):
-                    raise ValueError("下载过滤失败")
+                    if total_size == 0:
+                        raise ValueError(f"URL {url} 没有内容可以下载")
+                    bar = tqdm(
+                        total=total_size, desc=f"{filename}", unit="b", smoothing=0.5
+                    )
+                    bar.update(downloaded_size)
+                    download_mode: str = "wb" if downloaded_size == 0 else "ab"
+                    async with aiofiles.open(filename, download_mode) as file:
+                        pices_size: int = 8192
+                        while True:
+                            chunk = await response.content.read(pices_size)
+                            if not chunk:
+                                break
+                            await file.write(chunk)
+                            bar.update(len(chunk))
+                            downloaded_size += len(chunk)
+                    bar.close()
+                    if (
+                        downloaded_size < total_size
+                        or file_path.stat().st_size < total_size
+                    ):
+                        raise ValueError("下载失败")
+                    if enable_filter and (
+                        downloaded_size <= filter_size
+                        or file_path.stat().st_size <= filter_size
+                    ):
+                        raise ValueError("下载过滤失败")
 
         except Exception as e:
             return handle_down_other_error(e, filename, url)
@@ -332,6 +333,8 @@ async def download_mp4_with_progress(
             )  # type: ignore
             logger.success(json_data)
             return json_data
+    # finally:
+    # await session.close()
 
 
 @retry_on_error(
