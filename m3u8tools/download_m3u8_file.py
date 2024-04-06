@@ -369,9 +369,9 @@ class M3u8_download:
 
         command_list = self.get_command_lsit()
 
-        logger.debug(f"合并参数:{self.command_list}")
+        # logger.debug(f"合并参数:{self.command_list}")
 
-        logger.debug(f"合并文件列表:{ts_files}")
+        # logger.debug(f"合并文件列表:{ts_files}")
 
         issuccess = merge_mp4_files_ffmpeg(
             input_files=ts_files,

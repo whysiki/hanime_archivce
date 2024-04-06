@@ -223,7 +223,9 @@ def merge_mp4_files_ffmpeg(
 
         temp_input_files = [merge_files(input_files, temp_dir, command_list)]
 
-        assert len(temp_input_files) == 1, "最终合成文件列表数量不为1"
+        assert temp_input_files and isinstance(
+            temp_input_files[0], str
+        ), "最终合成文件列表数量不为1,  且不是字符串类型"
 
         shutil.copyfile(temp_input_files[0], output_file, follow_symlinks=True)  # type: ignore
 
