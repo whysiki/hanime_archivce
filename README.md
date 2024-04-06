@@ -16,13 +16,21 @@ git clone --single-branch --branch 2 https://github.com/whysiki/hanime_archivce.
 
 ## 配置
 
-安装 ffmpeg , 自行下载[ffmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest).
+#### 安装 ffmpeg
+
+自行下载[ffmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest).
 
 我用的是 gpl-shared 版本, 下载后解压到某个目录,
 
 并配置环境变量(可选).
 
-在使用前，请查看 `config.py` 进行相应的配置。
+#### 下载 xray
+
+自行下载[xray](https://xtls.github.io/)
+
+#### 使用了这个项目的代理池生成[xray_config_generator](https://github.com/Special-Week/xray_config_generator.git)
+
+#### 请查看 `config.py` 进行相应的配置。
 
 ## 使用
 
