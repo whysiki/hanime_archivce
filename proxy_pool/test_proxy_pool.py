@@ -18,9 +18,9 @@ async def fetch(url):
             async with session.get(url, proxy=proxy, timeout=10) as response:
                 html = await response.text()
                 print(html)
-                asyncio.sleep(2)
+                await asyncio.sleep(2)
     except:
-        print(f"Error:{proxy}")
+        print(f"Error:{proxy}")  # type: ignore
 
 
 async def main():

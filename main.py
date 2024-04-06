@@ -41,7 +41,7 @@ class GetVideo:
         self.links_set = (
             self.links_set.union(links_set) if hasattr(self, "links_set") else links_set
         )
-        self.genres = self.genres.add(self.genre)
+        self.genres = self.genres.add(self.genre)  # type: ignore
 
         # 保存缓存
         self.links_set_cache[self.genre] = self.links_set
@@ -96,7 +96,7 @@ class GetVideo:
 
     def parse_sources(self, sources_jsons) -> list[Dict]:
 
-        with ProcessPoolExecutor(max_workers=MERGE_TS_PROCESSES) as executor:
+        with ProcessPoolExecutor(max_workers=PERSE_MAX_PROCESSES) as executor:
             parse_tasks = [
                 executor.submit(parse, source_json["source"])
                 for source_json in sources_jsons
@@ -190,28 +190,17 @@ class GetVideo:
 
 if __name__ == "__main__":
 
-    if 0:
-        pass
-        # shutil.rmtree(SAVE_PATH, ignore_errors=True)
-        # shutil.rmtree("cache", ignore_errors=True)
+    get_video = GetVideo(save_path=SAVE_PATH, gengre="裏番")
 
-    if 1:
+    # asyncio.run(get_video.process_links(number=1))
 
-        get_video = GetVideo(save_path=SAVE_PATH, gengre="裏番")
+    test_m3u8_params = [
+        dict(
+            url=r"https://abre-videos.cdn1122.com/_hls/videos/a/e/d/1/c/aed1c468900a065a4c2149ac4ebe76371634067843-1440-1080-1131-h264.mp4/master.m3u8?validfrom=1712255163&validto=1712427963&rate=217152&hdl=-1&hash=ugYpGXoMaeLtGUEKd6X6IfioHF4%3D",
+            filename=r"test.mp4",
+        )
+    ]
 
-        # get_video.links_set = {
-        #     r"https://abre-videos.cdn1122.com/_hls/videos/a/e/d/1/c/aed1c468900a065a4c2149ac4ebe76371634067843-1440-1080-1131-h264.mp4/master.m3u8?validfrom=1712255163&validto=1712427963&rate=217152&hdl=-1&hash=ugYpGXoMaeLtGUEKd6X6IfioHF4%3D"
-        # }
+    asyncio.run(get_video.download_m3u8_videos(test_m3u8_params))
 
-        # asyncio.run(get_video.process_links(number=1))
-
-        test_m3u8_params = [
-            dict(
-                url=r"https://abre-videos.cdn1122.com/_hls/videos/a/e/d/1/c/aed1c468900a065a4c2149ac4ebe76371634067843-1440-1080-1131-h264.mp4/master.m3u8?validfrom=1712255163&validto=1712427963&rate=217152&hdl=-1&hash=ugYpGXoMaeLtGUEKd6X6IfioHF4%3D",
-                filename=r"test.mp4",
-            )
-        ]
-
-        asyncio.run(get_video.download_m3u8_videos(test_m3u8_params))
-
-    # print("下载完成")
+# print("下载完成")

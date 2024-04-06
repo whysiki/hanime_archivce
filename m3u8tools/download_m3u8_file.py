@@ -5,9 +5,7 @@ from config import (
     TS_RETRIES,
     TIME_OUT,
     TS_SEMAPHORE_SIZE,
-    MERGE_TS_PROCESSES,
     PROXIES_POOL,
-    BATCH_SIZE,
 )
 
 
@@ -20,10 +18,6 @@ class M3u8_download:
     TS_DOWNLOAD_TIMEOUT: int = TIME_OUT
 
     SEM: int = TS_SEMAPHORE_SIZE
-
-    MAX_PROCESS: int = (
-        MERGE_TS_PROCESSES  # max(math.floor(multiprocessing.cpu_count() / 2), 1)
-    )
 
     def __init__(
         self, m3u8_link: str, proxies: dict, out_path: str, headers: dict = {}
@@ -62,8 +56,6 @@ class M3u8_download:
         self.frame_rate: str = ""
 
         self.command_list: list[str] = []
-
-        self.batch_size: int = BATCH_SIZE
 
         self.out_path = out_path
 
@@ -212,7 +204,7 @@ class M3u8_download:
 
         return self.seg_link_list
 
-    @staticmethod
+    @staticmethod  # type: ignore
     def download_seg_callback(kargs, proxy_pool=PROXY_POOL):
 
         next_proxies = proxy_pool.next_proxies()
@@ -385,8 +377,6 @@ class M3u8_download:
             input_files=ts_files,
             output_file=self.out_path,
             temp_dir=os.path.join(self.temp_dowload_directory, "temp_merge_mp4_cache"),
-            max_processes=self.MAX_PROCESS,
-            batch_size=self.batch_size,
             command_list=command_list,
         )
 
@@ -426,7 +416,7 @@ class M3u8_download:
 
     def clear_cache(self):
         # list_cache = os.walk()
-        shutil.rmtree(self.temp_dowload_directory)
+        shutil.rmtree(self.temp_dowload_directory)  # type: ignore
 
         logger.success(f"清空缓存文件夹:{self.temp_dowload_directory}")
 

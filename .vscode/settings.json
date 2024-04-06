@@ -1,7 +1,7 @@
 {
-    "terminal.integrated.env.windows": {
-        "PYTHONPATH": "$PYTHONPATH;${workspaceFolder}"
-      },
-      //严格检查
-      "python.analysis.typeCheckingMode": "off"
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "$PYTHONPATH;${workspaceFolder}"
+  },
+  //严格检查
+  "python.analysis.typeCheckingMode": "standard"
 }

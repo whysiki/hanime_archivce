@@ -38,7 +38,7 @@ def retry_on_error(
 
             process_last_retry_func(kwargs)
 
-            return result
+            return result  # type: ignore
 
         return wrapper
 

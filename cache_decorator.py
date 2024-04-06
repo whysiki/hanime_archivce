@@ -54,7 +54,8 @@ def async_unit_cache(assert_result: Callable, cache_path: str):
                 result = await func(*args, **kwargs)
 
             finally:
-                return result
+
+                return result  # type: ignore
 
         return wrapper
 
@@ -107,7 +108,7 @@ def sync_unit_cache(assert_result: Callable, cache_path: str):
                 result = func(*args, **kwargs)
 
             finally:
-                return result
+                return result  # type: ignore
 
         return wrapper
 

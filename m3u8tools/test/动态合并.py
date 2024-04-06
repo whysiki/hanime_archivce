@@ -40,8 +40,6 @@ if __name__ == "__main__":
         temp_dir=os.path.join(current, "tem_merge"),
         input_files=input_files,
         output_file=out_file,
-        max_processes=2,
-        batch_size=30,
         # overwrite=True,
     )
 

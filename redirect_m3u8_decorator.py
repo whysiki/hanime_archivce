@@ -18,6 +18,6 @@ def redirect_m3u8_decorator(func):
                 )
             return result
         except Exception:
-            return result
+            return result  # type: ignore
 
     return wrapper

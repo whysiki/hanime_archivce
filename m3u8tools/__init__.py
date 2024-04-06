@@ -94,7 +94,7 @@ def merge_ts_files_ffmpeg_unit(
     overwrite=True,
     command_list: list[str] = [],
     temp_dir: str = "temp_ffmpeg_cache",
-    ffmpeg_exe_path: str = FFMPEG_EXE_PATH,
+    ffmpeg_exe_path: str = FFMPEG_EXE_PATH,  # type: ignore
 ):
     if tuple_files_output_file and len(tuple_files_output_file) == 2:
         input_files, output_file = tuple_files_output_file
@@ -142,7 +142,6 @@ def merge_ts_files_ffmpeg_unit(
         temp_file.flush()
 
         ffmpeg_command = [
-            # "ffmpeg",
             ffmpeg_exe_path,
             "-f",
             "concat",
@@ -162,6 +161,7 @@ def merge_ts_files_ffmpeg_unit(
         ffmpeg_command.insert(1, "-y")
 
     if command_list and len(command_list) > 1:
+
         ffmpeg_command.extend(command_list)
 
     try:
@@ -225,7 +225,7 @@ def merge_mp4_files_ffmpeg(
 
         assert len(temp_input_files) == 1, "最终合成文件列表数量不为1"
 
-        shutil.copyfile(temp_input_files[0], output_file, follow_symlinks=True)
+        shutil.copyfile(temp_input_files[0], output_file, follow_symlinks=True)  # type: ignore
 
         logger.debug(f"把 {temp_input_files[0]} 复制到 {output_file} 成功")
 

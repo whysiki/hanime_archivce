@@ -33,7 +33,7 @@ assert path.exists(
 
 decrypted: bytes = cyption.decrypt_file(
     config_encrypted_path, key, to_file=False, to_return=True
-)
+)  # type: ignore
 
 
 def clear_temp_dir(temp_dir):
@@ -74,8 +74,8 @@ try:
 finally:
 
     # 清理临时文件夹
-    clear_temp_dir(temp_dir)
+    clear_temp_dir(temp_dir)  # type: ignore
 
-atexit.register(clear_temp_dir, temp_dir)
+atexit.register(clear_temp_dir, temp_dir)  # type: ignore
 
 # command = f'start cmd /k "{xray_exe_path} run -c {temp_file.name}"'
